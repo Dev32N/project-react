@@ -1,71 +1,35 @@
 import React from 'react';
-import './nav.css'; // Import the CSS file
-import {
-    Navbar,
-    NavbarBrand,
-    NavbarToggler,
-    Collapse,
-    Nav,
-    NavItem,
-    NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem,
-    Container
-} from 'reactstrap';
+import { Navbar, Nav, NavItem, NavLink } from 'reactstrap';
+import './nav.css';
 
-function App() {
-    return (
-        <div className='nav-container'>
-            <Container>
-                <Navbar color="light" expand="lg">
-                    <NavbarBrand href="#">
-                        <img src='./images/logo-trans.png' alt='logo' title='1989 perfume' />
-                    </NavbarBrand>
-                    <div className='searchBar'>
-                        <input type='text' placeholder='Tìm kiếm mẫu nước hoa....' />
-                        <button>
-                            <span><i className="fa-solid fa-magnifying-glass"></i></span>
-                        </button>
-                    </div>
-                    <NavbarToggler />
-                    <Collapse navbar>
-                        <Nav className="nav-content">
-                            <NavItem>
-                                <NavLink href="#">Trang Chủ</NavLink>
-                            </NavItem>
-                            <UncontrolledDropdown nav inNavbar>
-                                <DropdownToggle nav caret>
-                                    Sản Phẩm
-                                </DropdownToggle>
-                                <DropdownMenu right>
-                                    <DropdownItem>
-                                        Flash Sale
-                                    </DropdownItem>
-                                    <DropdownItem>
-                                        Nước Hoa Nam
-                                    </DropdownItem>
-                                    <DropdownItem>
-                                        Nước Hoa nữ
-                                    </DropdownItem>
-                                    <DropdownItem>
-                                        Nước hoa giá sốc
-                                    </DropdownItem>
-                                </DropdownMenu>
-                            </UncontrolledDropdown>
-                            <NavItem>
-                                <NavLink href="#">Blog</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href="#">Liên Hệ</NavLink>
-                            </NavItem>
-                        </Nav>
-                    </Collapse>
-                </Navbar>
-            </Container>
-        </div>
-    );
-}
+const MyNavbar = () => {
+  return (
+    <Navbar className='nav-container' expand="md">
+      <Nav className="navbar-nav" navbar>
+        <NavItem>
+          <NavLink href="/1989Perfume" className='home'>1989Perfume</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink href="/hot-deal" className='hotdeal'>Hot Deal</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink href="/nuoc-hoa-nam">Nước Hoa Nam</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink href="/nuoc-hoa-nu">Nước Hoa Nữ</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink href="/son-moi">Son Môi</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink href="/blog">Blog</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink href="/lien-he">Liên Hệ</NavLink>
+        </NavItem>
+      </Nav>
+    </Navbar>
+  );
+};
 
-export default App;
+export default MyNavbar;

@@ -1,8 +1,10 @@
 /* App.css */
 .slogan{
-    background-color: rgb(255, 69, 184);
+    background-color: rgb(170, 32, 73);
     text-align: center;
     color: #fff;
     padding: 4px 0px;
     font-size: 14px;
+    width: 100%;
+    white-space: nowrap;
 }

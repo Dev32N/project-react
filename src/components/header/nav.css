@@ -1,67 +1,56 @@
-/* nav.css */
-.nav-container{
-    display: flex;
-}
+/* Thanh điều hướng */
 .navbar {
-    background-color: #faf1f1 !important;
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-.navbar-collapse{
-    /* justify-content: center; */
+    background-color: transparent
 }
 
-.navbar-brand img {
-    width: 150px;
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+.nav-item {
+    position: relative;
+    margin: 0 12px; 
+}
+
+
+.nav-item::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    height: 20px;
+    width: 1px;
+    background-color: #a09999;
+    opacity: 0.8;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+}
+
+.nav-item:last-child::after {
+    display: none;
 }
 
 .nav-link {
-    color: #5a5a5a !important;
-    font-size: 18px;
-    text-align: center;
+    color: #3a393a;
+    text-decoration: none;
+    font-size: 16px;
 }
+
 
 .nav-link:hover {
-    color: rgb(255, 69, 184) !important;
+    color: #ff41c6;
 }
 
-/* search bar */
-.searchBar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    max-width: 500px;
-    margin: 0px 20px;
+.home {
+    font-weight: 700;
 }
 
-.searchBar input {
-    padding: 10px 15px;
-    width: 100%;
-    border: none;
-    border-radius: 15px 0 0 15px; 
-    font-size: 16px; 
-    outline: none;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-    max-width: calc(100% - 50px);
-}
-
-.searchBar button {
-    background-color: rgb(255, 69, 184);
-    border-radius: 0 15px 15px 0; 
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-    padding: 11px;
-    border: none;
-    text-align: center;
-    cursor: pointer;
-}
-
-.searchBar button:hover {
-    background-color: rgb(219, 73, 163);
-}
-
-.searchBar button i {
-    font-size: 18px;
-    color: white;
+.hotdeal {
+    color: #b42489;
+    font-weight: 700;
 }

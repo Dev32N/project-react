@@ -1,0 +1,147 @@
+/* nav.css */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgb(252, 215, 235),#fff);
+    margin: 0 auto;
+}
+.header-container {
+    padding: 20px 0px 0px 0px;
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    margin: 0 auto;
+}
+.logo{
+    margin-right: 10px;
+}
+.logo img{
+    width: 150px;
+}
+/*=====================================================
+    search bar
+ ====================================================== */
+.searchBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 650px;
+    width: 100%;
+    margin: 0 10px;
+}
+
+.searchBar input {
+    padding: 10px 15px;
+    width: 100%;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    max-width: calc(100% - 50px);
+}
+
+.searchBar button {
+    background-image: linear-gradient(to bottom, rgb(216, 79, 16),rgb(160, 30, 110));
+    border-radius: 0 10px 10px 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    padding: 11px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.searchBar button:hover {
+    background-color: rgb(241, 201, 226);
+}
+
+.searchBar button i {
+    font-size: 18px;
+    color: white;
+}
+
+/* ==========================================================================
+   contentnav2
+   ========================================================================== */
+.contentnav2 {
+    text-align: center;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.user-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.user-login {
+    text-align: center;
+    text-decoration: none;
+}
+
+.user-login img {
+    margin: 0 10px;
+}
+
+.user-login p {
+    text-align: center;
+    margin: 0;
+    color: #5a5a5a;
+    white-space: nowrap;
+    font-size: 15px;
+}
+
+.like-item {
+    position: relative;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.likecount {
+    position: absolute;
+    left: auto;
+    top: 12px;
+    right: -2px;
+    background-color: #d72229;
+    color: #fff;
+    font-weight: 500;
+    height: 15px;
+    line-height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    font-size: 10px;
+
+}
+
+.cart-item {
+    position: relative;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.cartcount {
+    position: absolute;
+    left: auto;
+    top: 12px;
+    right: -4px;
+    background-color: #d72229;
+    color: #fff;
+    font-weight: 500;
+    height: 15px;
+    line-height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    font-style: normal;
+    font-size: 10px;
+}
