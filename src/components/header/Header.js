@@ -1,7 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
 import './header.css'; 
-import SlideShow from './Carousel';
 
 export default function Header() {
     return (
@@ -36,9 +35,6 @@ export default function Header() {
                     </div>
                 </div>
                 <Navbar />
-            </div>
-            <div>
-                <SlideShow />
             </div>
         </div>
     )

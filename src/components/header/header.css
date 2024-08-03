@@ -6,7 +6,7 @@ body {
 }
 .header{
     width: 100%;
-    background-image: linear-gradient(to bottom, rgb(252, 215, 235),#fff);
+    background-image: linear-gradient(to bottom, rgb(255, 230, 243),#fff);
     margin: 0 auto;
 }
 .header-container {
@@ -46,7 +46,7 @@ body {
 }
 
 .searchBar button {
-    background-image: linear-gradient(to bottom, rgb(216, 79, 16),rgb(160, 30, 110));
+    background-image: linear-gradient(to bottom, rgb(208, 84, 26),rgb(237, 65, 171));
     border-radius: 0 10px 10px 0;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
     padding: 11px;

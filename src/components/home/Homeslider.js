@@ -1,9 +1,10 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-// Import Swiper styles
+import '../home/homeslider.css';
 import 'swiper/css';
 import 'swiper/css/pagination';
-// import required modules
+import 'swiper/css/navigation';
+
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 const items = [
@@ -34,29 +35,30 @@ const items = [
     }
 ];
 
-export default function Carousel() {
+export default function Homeslider() {
     return (
-        <div className="carousel-container">
-            <Swiper
-                spaceBetween={30}
-                centeredSlides={true}
-                autoplay={{
-                    delay: 2500,
-                    disableOnInteraction: false,
-                }}
-                pagination={{
-                    clickable: true,
-                }}
-                navigation={true}
-                modules={[Autoplay, Pagination]}
-                className="mySwiper"
-            >
-                {items.map(item => (
-                    <SwiperSlide key={item.key}>
-                        <img src={item.src} alt={item.alt} />
-                    </SwiperSlide>
-                ))}
-            </Swiper>
-        </div>
+      <div className="carousel-container">
+        <Swiper
+          spaceBetween={40}
+          slidesPerView={1}
+          loop={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Autoplay, Pagination, Navigation]}
+          className="mySwiper"
+        >
+          {items.map((item) => (
+            <SwiperSlide key={item.key}>
+              <img src={item.src} alt={item.alt} style={{ width: "100%" }} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     );
-}
+  }
