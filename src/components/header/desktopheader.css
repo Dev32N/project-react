@@ -6,7 +6,7 @@ body {
 }
 .header{
     width: 100%;
-    background-image: linear-gradient(to bottom, rgb(255, 230, 243),#fff);
+    background-image: linear-gradient(to bottom, rgb(253, 237, 246),#fff);
     margin: 0 auto;
 }
 .header-container {
@@ -17,7 +17,7 @@ body {
     margin: 0 auto;
 }
 .logo{
-    margin-right: 10px;
+    margin-right: 15px;
 }
 .logo img{
     width: 150px;

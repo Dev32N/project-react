@@ -1,6 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import '../home/homeslider.css';
+import './desktopslider.css';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -35,7 +35,7 @@ const items = [
     }
 ];
 
-export default function Homeslider() {
+export default function Desktopslider() {
     return (
       <div className="carousel-container">
         <Swiper

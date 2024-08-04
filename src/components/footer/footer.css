@@ -1,0 +1,106 @@
+.footer {
+    background-image: linear-gradient(to top, rgb(254, 196, 214), #fff);
+    padding: 10px;
+    color: #1f1e1e;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.footer .col1 p {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.footer .social-icons a i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #fdf6f69e;
+    margin-right: 5px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: rgb(255, 85, 130);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.footer .social-icons a i:hover {
+    background-color: #fff;
+    color: rgb(192, 30, 73);
+    transform: scale(1.1); 
+}
+
+
+.footer h5 {
+    margin-bottom: 20px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #1f1e1e;
+}
+.footer form button{
+    margin: 12px 0;
+    background-color: rgb(249, 91, 118);
+    border: none;
+    transition: transform 0.2s
+}
+.footer form button:hover{
+    background-color: rgb(250, 131, 157);
+    transform: scale(105%); 
+}
+.footer form button:focus {
+    background-color: rgb(249, 91, 118) !important;
+}
+.footer .contact{
+    white-space: nowrap;
+}
+
+.copyright hr {
+    width: 50%;
+    border-top: 1px solid #585858;
+    margin-top: 20px 0;
+    text-align: center;
+    transform: translateX(50%);
+}
+
+.copyright p {
+    font-size: 14px; 
+    color: #6c757d; 
+    margin: 0; 
+}
+
+@media (max-width:768px){
+    .footer .col1, .footer .col2, .footer .col3, .footer .col4 {
+        text-align: center !important;
+        margin-top: 25px;
+    }
+}
+@media (max-width: 576px) {
+    .footer .col1, .footer .col2, .footer .col3, .footer .col4 {
+        text-align: center !important;
+        position: relative; 
+    }
+
+    .footer .col2::after, .footer .col3::after {
+        content: "";
+        display: block;
+        border-bottom: 1px solid gray;
+        width: 10%;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0.7;
+    }
+}

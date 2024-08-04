@@ -1,0 +1,53 @@
+.heading{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+}
+.heading h3{
+    font-size: 30px;
+    color: #3A393A;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.heading p,i {
+    color: #898889;
+}
+.heading i{
+    margin-left: 6px;
+    font-size: 14px;
+}
+.branding {
+    display: flex;
+}
+
+.brandslider-container {
+    display: block;
+    width: 50%;
+}
+
+.carousel-container img {
+    width: 100%;
+}
+
+.listbrand {
+    display: flex;
+    width: 50%;
+}
+
+.brand-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.brand-logo img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .brandslider-container {
+        display: none;
+    }
+}

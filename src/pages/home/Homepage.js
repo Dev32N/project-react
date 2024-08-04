@@ -1,12 +1,12 @@
 import React from 'react'
-import Header from '../../components/header/Header'
-import Homeslider from '../../components/home/Homeslider'
+import Desktopslider from '../../components/home/Desktopslider'
+import Brandslider from '../../components/home/Brandslider'
 
 export default function Homepage() {
   return (
     <div>
-        <Header />
-        <Homeslider />
+        <Desktopslider />
+        <Brandslider />
     </div>
   )
 }
