@@ -1,6 +1,7 @@
+.contain{
+    margin-top: 10px;
+}
 .heading{
-    display: flex;
-    justify-content: space-between;
     margin-top: 40px;
     margin-bottom: 10px;
     padding-bottom: 8px;
@@ -9,13 +10,6 @@
     font-size: 30px;
     color: #3A393A;
     font-family: Georgia, 'Times New Roman', Times, serif;
-}
-.heading p,i {
-    color: #898889;
-}
-.heading i{
-    margin-left: 6px;
-    font-size: 14px;
 }
 .branding {
     display: flex;

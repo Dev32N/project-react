@@ -1,0 +1,121 @@
+.group1{
+    margin-top: 20px 0;
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    padding: 10px 0;
+}
+.heading h3{
+    font-size: 30px;
+    color: #3A393A;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.heading p,i {
+    color: #444244;
+}
+.heading i{
+    margin-left: 6px;
+    font-size: 14px;
+}
+
+.product-card {
+    height: 100%;
+    position: relative;
+    background: #fff;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.new-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: red;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+    z-index: 1;
+}
+
+.product-card img {
+    max-width: 100%;
+    margin-bottom: 10px;
+    flex-grow: 1;
+    padding: 20px;
+    transition: 0.8s ease;
+}
+
+.product-card img:hover {
+    transform: scale(1.1);
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.product-info h3 {
+    font-size: 16px;
+    margin: 6px 0;
+    flex-grow: 1;
+}
+
+.product-info p {
+    font-size: 14px;
+    margin: 4px 0;
+    min-height: 30px;
+    line-height: 15px;
+}
+
+.product-info .price {
+    color: red;
+    font-weight: bold;
+}
+
+.ItemSwiper {
+    --swiper-navigation-size: 24px;
+}
+
+.ItemSwiper .swiper-button-next,
+.ItemSwiper .swiper-button-prev {
+    color: #000;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+}
+
+@media(max-width:768px) {
+    .ItemSwiper .swiper-button-next,
+    .ItemSwiper .swiper-button-prev{
+        display: none;
+    }
+    .product-info h3 {
+        min-height: 30px;
+        line-height: 15px;
+    }
+    .product-info .name {
+        font-size: 12px;
+        margin: 4px 0;
+        min-height: 30px;
+        line-height: 15px;
+    }
+    .product-info .price{
+        font-size: 12px;
+        min-height: 30px;
+        line-height: 15px;
+    }
+    .product-info .sizes{
+        margin-top: 2px;
+        font-size: 10px;
+    }
+}

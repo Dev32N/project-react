@@ -5,7 +5,7 @@ import './footer.css'
 function Footer() {
     return (
         <footer className="footer">
-            <Container>
+            <Container className='container-footer'>
                 <Row>
                     <Col xs={12} sm={6} md={3} className='col1 text-center'>
                         <img src="/images/logo-trans.png" alt="1989perfume logo" width={"50%"} />

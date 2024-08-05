@@ -1,6 +1,7 @@
 .carouselContainer {
     width: 100%;
     position: relative;
+    margin-bottom: 10px;
 }
 
 .mySwiper .swiper-pagination-bullet {
@@ -12,7 +13,7 @@
 }
 
 .mySwiper .swiper-pagination-bullet-active {
-    background-color: #ff7474;
+    background-color: #fc4e91;
     width: 26px;
 }
 

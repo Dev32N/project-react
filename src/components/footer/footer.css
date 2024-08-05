@@ -1,9 +1,12 @@
 .footer {
-    background-image: linear-gradient(to top, rgb(254, 196, 214), #fff);
-    padding: 10px;
+    background-image: linear-gradient(to top, rgb(255, 211, 225), #fdf5f5);
+    padding: 20px 0;
     color: #1f1e1e;
-    box-sizing: border-box;
-    margin-top: 20px;
+    box-sizing: border-box;  
+}
+
+.container-footer{
+    padding: 30px 10px 0px 10px;
 }
 
 .footer .col1 p {

@@ -6,7 +6,7 @@ body {
 }
 .header{
     width: 100%;
-    background-image: linear-gradient(to bottom, rgb(253, 237, 246),#fff);
+    background-image: linear-gradient(to bottom, rgb(255, 211, 225),#fff);
     margin: 0 auto;
 }
 .header-container {

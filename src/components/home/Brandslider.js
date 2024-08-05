@@ -41,14 +41,9 @@ export default function Brandslider() {
   ];
 
   return (
-    <Container className='group1'>
+    <Container className='contain'>
       <div className='heading'>
           <h3>Thương Hiệu</h3>
-          <p>Xem thêm 
-            <span>
-            <i class="fa-solid fa-angle-right"></i>
-            </span>
-          </p>
       </div>
       <Row className='branding'>
         <Col className='brandslider-container'>
