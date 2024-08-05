@@ -1,19 +1,25 @@
 .footer {
     background-image: linear-gradient(to top, rgb(255, 211, 225), #fdf5f5);
-    padding: 20px 0;
+    padding: 40px 0;
     color: #1f1e1e;
     box-sizing: border-box;  
 }
 
 .container-footer{
-    padding: 30px 10px 0px 10px;
+    padding: 40px 10px 0px 20px;
 }
 
 .footer .col1 p {
-    margin-top: 15px;
-    margin-bottom: 20px;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+.footer .col2 {
+    padding-left: 60px;
 }
 
+.footer .col1 img{
+    margin-bottom: 6px;
+}
 .footer .social-icons a i {
     width: 40px;
     height: 40px;
@@ -36,7 +42,8 @@
 
 
 .footer h5 {
-    margin-bottom: 20px;
+    font-size: 22px;
+    margin-bottom: 30px;
 }
 
 .footer ul {
@@ -45,7 +52,7 @@
 }
 
 .footer ul li {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .footer ul li a {
@@ -72,24 +79,30 @@
 .copyright hr {
     width: 50%;
     border-top: 1px solid #585858;
-    margin-top: 20px 0;
+    margin-top: 10px 0;
     text-align: center;
     transform: translateX(50%);
 }
 
 .copyright p {
-    font-size: 14px; 
+    font-size: 13px; 
     color: #6c757d; 
     margin: 0; 
 }
 
 @media (max-width:768px){
+    .footer .col2{
+        padding: 0;
+    }
     .footer .col1, .footer .col2, .footer .col3, .footer .col4 {
         text-align: center !important;
         margin-top: 25px;
     }
 }
 @media (max-width: 576px) {
+    .footer .col2{
+        padding: 0;
+    }
     .footer .col1, .footer .col2, .footer .col3, .footer .col4 {
         text-align: center !important;
         position: relative; 
@@ -105,5 +118,40 @@
         left: 50%;
         transform: translateX(-50%);
         opacity: 0.7;
+    }
+    .footer .col1 p{
+        margin: 10px 10px 15px 10px;
+    }  
+    .footer .col1{
+        margin-bottom: 15px;
+    }
+    .footer .col1 p, .footer ul li a{
+        font-size: 14px;
+        padding: 0 10px;
+    }
+    .copyright p {
+        font-size: 12px;  
+    }
+}
+@media (max-width:320px){
+    .footer .col2{
+        padding: 0;
+    }
+    .footer .col1, .footer .col2, .footer .col3, .footer .col4 {
+        text-align: center !important;
+        margin-top: 25px;
+    }
+    .footer .col1 p{
+        margin: 10px 10px 15px 10px;
+    }  
+    .footer .col1{
+        margin-bottom: 15px;
+    }
+    .footer .col1 p, .footer ul li a{
+        font-size: 14px;
+        padding: 0 10px;
+    }
+    .copyright p {
+        font-size: 12px;  
     }
 }

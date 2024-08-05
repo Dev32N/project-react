@@ -1,6 +1,5 @@
 .tabbar1 {
-  margin: 10px 0;
-  margin: 10px 0;
+  margin: 40px 0;
 }
 
 .container-tab {
@@ -18,7 +17,7 @@
 .list_logo {
   padding: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   text-align: center;
   margin-bottom: 20px;
   margin: 0 auto;
@@ -26,11 +25,11 @@
 
 .list_logo h3 {
   margin: 10px;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .box {
-  width: 20%;
+  flex: 100%;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -39,13 +38,14 @@
   width: 80px;
   height: 80px;
   line-height: 40px;
-  padding: 12px;
+  padding: 14px;
   border-radius: 50%;
   background-color: #fff;
 }
 
 .box.active img {
   background-color: #ffe6eb;
+  border: 2px solid rgb(255, 111, 0);
 }
 
 .tab {
@@ -56,10 +56,8 @@
   display: block;
 }
 .contain-text{
-  margin: 10px auto;
-  padding: 20px;
   text-align: center;
-  min-height: 250px;
+  max-width: 700px;
 }
 .content {
   padding: 20px;
@@ -70,12 +68,50 @@
   margin: 15px 0;
 }
 
-@media (max-width:768px) {
+@media (max-width:768px){
+
+  .container-tab h1{
+    font-size: 26px;
+    text-align: center;
+    margin: 10px 0 20px;
+    padding: 10px;
+  }
   .list_logo h3 {
+    margin: 10px;
     font-size: 18px;
   }
-
+  .content h5 {
+    font-size: 18px;
+    margin: 15px 0;
+  }
+  .content p{
+    font-size: 14px;
+    padding: 10px 0px 0px 0;
+  }
+}
+@media (max-width: 576px) {
+  .box img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  .container-tab h1{
+    font-size: 26px;
+    text-align: center;
+    margin: 10px 0 20px;
+    padding: 10px;
+  }
+  .list_logo h3 {
+    margin: 10px;
+    font-size: 10px;
+  }
   .content h5 {
     font-size: 16px;
+    margin: 15px 0;
+  }
+  .content p{
+    font-size: 14px;
+    padding: 10px 0px 0px 0;
   }
 }

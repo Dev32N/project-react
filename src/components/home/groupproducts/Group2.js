@@ -32,8 +32,9 @@ const Group2 = () => {
                 <Swiper
                     modules={[Navigation, Autoplay]}
                     navigation
-                    spaceBetween={20}
+                    spaceBetween={0}
                     slidesPerView={6}
+                    loop={true}
                     autoplay={{
                         delay: 2500,
                         disableOnInteraction: false,
@@ -41,7 +42,7 @@ const Group2 = () => {
                     breakpoints={{
                         320: { slidesPerView: 2 },
                         640: { slidesPerView: 3 },
-                        768: { slidesPerView: 4 },
+                        768: { slidesPerView: 3 },
                         1024: { slidesPerView: 6 }
                     }}
                     className="ItemSwiper"

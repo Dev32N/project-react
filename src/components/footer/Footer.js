@@ -16,7 +16,7 @@ function Footer() {
                             <a href="#"><i className="fab fa-instagram"></i></a>
                         </div>
                     </Col>
-                    <Col xs={12} sm={6} md={3} className='col2 text-center'>
+                    <Col xs={12} sm={6} md={3} className='col2'>
                         <h5>Về chúng tôi</h5>
                         <ul className='text-left'>
                             <li><a href="#">Nước hoa nam</a></li>

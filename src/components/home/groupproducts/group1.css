@@ -45,9 +45,9 @@
 }
 
 .product-card img {
-    max-width: 100%;
-    margin-bottom: 10px;
+    max-width: 90%;
     flex-grow: 1;
+    margin: 0 auto;
     padding: 20px;
     transition: 0.8s ease;
 }
@@ -68,6 +68,13 @@
     font-size: 16px;
     margin: 6px 0;
     flex-grow: 1;
+    min-height: 30px;
+    line-height: 15px;
+}
+.product-info .name {
+    margin: 4px 0;
+    min-height: 30px;
+    line-height: 15px;
 }
 
 .product-info p {
@@ -78,8 +85,11 @@
 }
 
 .product-info .price {
+    margin: 10px 0;
     color: red;
     font-weight: bold;
+    min-height: 30px;
+    line-height: 15px;
 }
 
 .ItemSwiper {

@@ -25,15 +25,16 @@ const Group1 = () => {
                     <h3>Nước Hoa Nam</h3>
                     <p>Xem thêm
                         <span>
-                            <i class="fa-solid fa-angle-right"></i>
+                            <i className="fa-solid fa-angle-right"></i>
                         </span>
                     </p>
                 </div>
                 <Swiper
                     modules={[Navigation, Autoplay]}
                     navigation
-                    spaceBetween={20}
+                    spaceBetween={0}
                     slidesPerView={6}
+                    loop={true}
                     autoplay={{
                         delay: 2500,
                         disableOnInteraction: false,
@@ -41,7 +42,7 @@ const Group1 = () => {
                     breakpoints={{
                         320: { slidesPerView: 2 },
                         640: { slidesPerView: 3 },
-                        768: { slidesPerView: 4 },
+                        768: { slidesPerView: 3 },
                         1024: { slidesPerView: 6 }
                     }}
                     className="ItemSwiper"
