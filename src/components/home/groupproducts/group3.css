@@ -1,15 +1,17 @@
-.group2{
-    margin-top: 20px 0;
+.group3{
+    width: 80%;
+    margin: 0 auto;
 }
 .heading{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 10px;
-    margin-top: 40px;
+    margin-top: 30px;
     padding: 10px 0;
 }
 .heading h3{
-    font-size: 30px;
+    font-size: 26px;
     color: #3A393A;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -115,5 +117,27 @@
     .product-info .sizes{
         margin-top: 2px;
         font-size: 10px;
+    }
+}
+@media (max-width: 576px) {
+    .heading h3{
+        font-size: 22px;
+        color: #3A393A;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+        .heading p,i {
+        color: #444244;
+        font-size: 12px;
+    }
+}
+@media (max-width: 320px) {
+    .heading h3{
+        font-size: 20px;
+        color: #3A393A;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .heading p,i {
+        color: #444244;
+        font-size: 12px;
     }
 }

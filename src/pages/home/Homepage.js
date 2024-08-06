@@ -12,9 +12,12 @@ import { Container } from 'react-bootstrap'
 export default function Homepage() {
   return (
     <Container>
-      <Header />
       <Desktopslider />
       <Brandslider />
+      <Group1 />
+      <Group2 />
+      <Group3 />
+      <About1989 />
       <Footer />
     </Container>
   )

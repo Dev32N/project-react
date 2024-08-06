@@ -57,20 +57,22 @@ const About1989 = () => {
   return (
     <>
       <section className="tabbar1">
-        <div className="container-tab">
-          <h1>Về 1989Perfume</h1>
-          <div className="list_logo">
-            {tabs.map((tab, index) => (
-              <div
-                key={index}
-                className={`box ${activeTab === index ? 'active' : ''}`}
-                onClick={() => setActiveTab(index)}
-                onMouseEnter={() => setActiveTab(index)}
-              >
-                <img src={tab.src} alt={`logo${index + 1}`} />
-                <h3>{tab.title}</h3>
-              </div>
-            ))}
+        <div className='tab1bg'>
+          <div className="container-tab">
+            <h1>Về 1989Perfume</h1>
+            <div className="list_logo">
+              {tabs.map((tab, index) => (
+                <div
+                  key={index}
+                  className={`box ${activeTab === index ? 'active' : ''}`}
+                  onClick={() => setActiveTab(index)}
+                  onMouseEnter={() => setActiveTab(index)}
+                >
+                  <img src={tab.src} alt={`logo${index + 1}`} />
+                  <h3>{tab.title}</h3>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
         <Container className="contain-text">
@@ -88,19 +90,21 @@ const About1989 = () => {
         </Container>
       </section>
       <section className="tabbar2">
-        <div className="container-tab">
-          <div className="list_logo">
-            {tab2.map((tab, index) => (
-              <div
-                key={index}
-                className={`box ${activeTab2 === index ? 'active' : ''}`}
-                onClick={() => setActiveTab2(index)}
-                onMouseEnter={() => setActiveTab2(index)}
-              >
-                <img src={tab.src} alt={`logo${index + 1}`} />
-                <h3>{tab.title}</h3>
-              </div>
-            ))}
+        <div className='tab2bg'>
+          <div className="container-tab">
+            <div className="list_logo">
+              {tab2.map((tab, index) => (
+                <div
+                  key={index}
+                  className={`box ${activeTab2 === index ? 'active' : ''}`}
+                  onClick={() => setActiveTab2(index)}
+                  onMouseEnter={() => setActiveTab2(index)}
+                >
+                  <img src={tab.src} alt={`logo${index + 1}`} />
+                  <h3>{tab.title}</h3>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
         <Container className="contain-text">

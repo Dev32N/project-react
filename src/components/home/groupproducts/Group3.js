@@ -27,7 +27,7 @@ const Group3 = () => {
     ];
 
     return (
-        <section className="group2">
+        <section className="group3">
             <Container>
                 <div className='heading'>
                     <h3>Nước Hoa Nữ</h3>

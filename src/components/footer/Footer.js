@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 import { Container, Col, Form, Button } from 'react-bootstrap';
 import './footer.css';
