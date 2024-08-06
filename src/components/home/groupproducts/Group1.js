@@ -22,7 +22,7 @@ const Group1 = () => {
         <section className="group1">
             <Container>
                 <div className='heading'>
-                    <h3>Nước Hoa Nam</h3>
+                    <h3>Sản phẩm mới</h3>
                     <p>Xem thêm
                         <span>
                             <i className="fa-solid fa-angle-right"></i>

@@ -41,44 +41,40 @@ export default function Brandslider() {
   ];
 
   return (
-    <Container className='contain'>
+    <div className='contain'>
       <div className='heading'>
-          <h3>Thương Hiệu</h3>
+        <h3>Thương Hiệu</h3>
       </div>
-      <Row className='branding'>
-        <Col className='brandslider-container'>
-          <div className='brandslider'>
-            <div className="carousel-container">
-              <Swiper
-                spaceBetween={40}
-                slidesPerView={1}
-                loop={true}
-                autoplay={{
-                  delay: 2000,
-                  disableOnInteraction: false,
-                }}
-                modules={[Autoplay]}
-                className="mySwiper"
-              >
-                {branditems.map((item) => (
-                  <SwiperSlide key={item.key}>
-                    <img src={item.src} alt={item.alt} />
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            </div>
+      <div className='brcontain'>
+        <Container className='brandslider-container'>
+          <div className="carouselbrand">
+            <Swiper
+              spaceBetween={0}
+              slidesPerView={1}
+              loop={true}
+              autoplay={{
+                delay: 2000,
+                disableOnInteraction: false,
+              }}
+              modules={[Autoplay]}
+              className="brandslide"
+            >
+              {branditems.map((item) => (
+                <SwiperSlide key={item.key}>
+                  <img src={item.src} alt={item.alt} />
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
-        </Col>
-        <Col className='listbrand'>
-          <Row>
+        </Container>
+        <div className='listbrand'>
             {listlogo.map((item) => (
-              <Col xs={4} sm={4} md={3} key={item.id} className='brand-logo'>
+              <div key={item.id} className='brand-logo'>
                 <img src={item.src} alt={`Logo ${item.id}`} />
-              </Col>
+              </div>
             ))}
-          </Row>
-        </Col>
-      </Row>
-    </Container>
+        </div>
+      </div>
+    </div>
   );
 }

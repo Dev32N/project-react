@@ -11,10 +11,11 @@
     justify-content: center;
     width: 100%;
     position: relative;
+    list-style-type: none;
 }
 .nav-item {
     position: relative;
-    margin: 0 12px; 
+    margin: 0 14px; 
 }
 
 
@@ -43,14 +44,11 @@
 
 
 .nav-link:hover {
-    color: #ff41c6;
+    color: #a31077;
 }
 
-.home {
+.nav-item .home {
     font-weight: 700;
-}
-
-.hotdeal {
     color: #cc2a9c;
     font-weight: 700;
 }

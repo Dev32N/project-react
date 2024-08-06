@@ -6,7 +6,7 @@ body {
 }
 .header{
     width: 100%;
-    background-image: linear-gradient(to bottom, rgb(255, 211, 225),#fff);
+    background-image: linear-gradient(to bottom, rgb(255, 248, 251),#fff);
     margin: 0 auto;
 }
 .header-container {
@@ -16,9 +16,6 @@ body {
     justify-content: center;
     margin: 0 auto;
 }
-.logo{
-    margin-right: 15px;
-}
 .logo img{
     width: 150px;
 }
@@ -26,6 +23,7 @@ body {
     search bar
  ====================================================== */
 .searchBar {
+    padding-left: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,37 +99,12 @@ body {
 .like-item {
     position: relative;
     text-decoration: none;
-    margin: 0 10px;
 }
 
 .likecount {
     position: absolute;
     left: auto;
-    top: 12px;
-    right: -2px;
-    background-color: #d72229;
-    color: #fff;
-    font-weight: 500;
-    height: 15px;
-    line-height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    display: inline-block;
-    text-align: center;
-    font-size: 10px;
-
-}
-
-.cart-item {
-    position: relative;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-.cartcount {
-    position: absolute;
-    left: auto;
-    top: 12px;
+    top: 2px;
     right: -4px;
     background-color: #d72229;
     color: #fff;
@@ -142,6 +115,31 @@ body {
     border-radius: 50%;
     display: inline-block;
     text-align: center;
+    font-size: 10px;
+    padding-left: 1px;
+}
+
+.cart-item {
+    position: relative;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.cartcount {
+    position: absolute;
+    left: auto;
+    top: 2px;
+    right: -4px;
+    background-color: #d72229;
+    color: #fff;
+    font-weight: 500;
+    height: 15px;
+    width: 15px;
+    line-height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
     font-style: normal;
     font-size: 10px;
+    padding-left: 1px;
 }

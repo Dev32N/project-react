@@ -1,35 +1,33 @@
 import React from 'react';
-import { Navbar, Nav, NavItem, NavLink } from 'reactstrap';
+import { Navbar, Nav, NavItem } from 'reactstrap';
+import { Link } from 'react-router-dom';
 import './desktopnav.css';
 
-const MyNavbar = () => {
+const Desktopnavbar = () => {
   return (
     <Navbar className='nav-container' expand="md">
       <Nav className="navbar-nav" navbar>
-        <NavItem>
-          <NavLink href="/1989Perfume" className='home'>1989Perfume</NavLink>
+        <NavItem className="nav-item">
+          <Link to="/" className='nav-link home'>1989Perfume</Link>
         </NavItem>
-        <NavItem>
-          <NavLink href="/hot-deal" className='hotdeal'>Hot Deal</NavLink>
+        <NavItem className="nav-item">
+          <Link to="/nuoc-hoa-nam" className='nav-link'>Nước Hoa Nam</Link>
         </NavItem>
-        <NavItem>
-          <NavLink href="/nuoc-hoa-nam">Nước Hoa Nam</NavLink>
+        <NavItem className="nav-item">
+          <Link to="/nuoc-hoa-nu" className='nav-link'>Nước Hoa Nữ</Link>
         </NavItem>
-        <NavItem>
-          <NavLink href="/nuoc-hoa-nu">Nước Hoa Nữ</NavLink>
+        <NavItem className="nav-item">
+          <Link to="/son-moi" className='nav-link'>Son Môi</Link>
         </NavItem>
-        <NavItem>
-          <NavLink href="/son-moi">Son Môi</NavLink>
+        <NavItem className="nav-item">
+          <Link to="/blog" className='nav-link'>Blog</Link>
         </NavItem>
-        <NavItem>
-          <NavLink href="/blog">Blog</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="/lien-he">Liên Hệ</NavLink>
+        <NavItem className="nav-item">
+          <Link to="/lien-he" className='nav-link'>Liên Hệ</Link>
         </NavItem>
       </Nav>
     </Navbar>
   );
 };
 
-export default MyNavbar;
+export default Desktopnavbar;

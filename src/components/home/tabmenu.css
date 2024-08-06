@@ -1,5 +1,5 @@
 .tabbar1 {
-  margin: 40px 0;
+  margin-top: 50px;
 }
 
 .container-tab {
@@ -17,7 +17,7 @@
 .list_logo {
   padding: 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   text-align: center;
   margin-bottom: 20px;
   margin: 0 auto;
@@ -29,7 +29,7 @@
 }
 
 .box {
-  flex: 100%;
+  width: 20%;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -61,6 +61,10 @@
 }
 .content {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .content h5 {
@@ -69,6 +73,17 @@
 }
 
 @media (max-width:768px){
+  .list_logo {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 20px;
+    margin: 0 auto;
+  }
+  .box {
+    flex: 100%;
+  }
 
   .container-tab h1{
     font-size: 26px;
@@ -90,6 +105,17 @@
   }
 }
 @media (max-width: 576px) {
+  .list_logo {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 20px;
+    margin: 0 auto;
+  }
+  .box {
+    flex: 100%;
+  }
   .box img {
     width: 60px;
     height: 60px;
