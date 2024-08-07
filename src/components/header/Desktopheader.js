@@ -8,7 +8,7 @@ export default function Desktopheader() {
         <div>
             <div className='header'>
                 <div className='header-container'>
-                    <a href='#' className='logo'>
+                    <a href='/' className='logo'>
                         <img src={`/images/logo-trans.png`} alt="logo" />
                     </a>
                     <div className='searchBar'>

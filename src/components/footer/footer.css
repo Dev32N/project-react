@@ -76,6 +76,9 @@
     text-decoration: none;
     color: #2b2929;
 }
+.footer-container ul li a:hover{
+    color: #ec1da7;
+}
 .footer-container form Input[type='email'] {
     padding: 8px;
     margin-right: 10px;

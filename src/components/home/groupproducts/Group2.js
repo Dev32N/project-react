@@ -7,6 +7,7 @@ import { Navigation, Autoplay } from 'swiper/modules';
 import { Container } from 'reactstrap';
 
 const Group2 = () => {
+
     const products = [
         { id: 1, brand: 'Afnan', name: 'Afnan Supremacy Silver', price: '1,380,000₫', sizes: '1 Sizes', image: './images/products/male/afnan-silver.jpg' },
         { id: 2, brand: 'Armaf', name: 'Armaf Club de Nuit Intense Man', price: '1,180,000₫', sizes: '1 Sizes', image: './images/products/male/armaf_club_de.jpg' },
@@ -29,22 +30,22 @@ const Group2 = () => {
     return (
         <section className="group2">
             <Container>
-                <div className='heading'>
-                    <h3>Nước Hoa Nam</h3>
-                    <p>Xem thêm
+                <div className='heading animation-tran'>
+                    <h3 className='site-animation'>Nước Hoa Nam</h3>
+                    <p className='site-animation'>Xem thêm
                         <span>
                             <i class="fa-solid fa-angle-right"></i>
                         </span>
                     </p>
                 </div>
-                <Swiper
+                <Swiper 
                     modules={[Navigation, Autoplay]}
                     navigation
                     spaceBetween={0}
                     slidesPerView={6}
                     loop={true}
                     autoplay={{
-                        delay: 2500,
+                        delay: 3200,
                         disableOnInteraction: false,
                     }}
                     breakpoints={{
@@ -53,11 +54,11 @@ const Group2 = () => {
                         768: { slidesPerView: 3 },
                         1024: { slidesPerView: 6 }
                     }}
-                    className="ItemSwiper"
+                    className="ItemSwiper animation-tran"
                 >
                     {products.map((product) => (
                         <SwiperSlide key={product.id}>
-                            <div className="product-card">
+                            <div className="product-card site-animation">
                                 <img src={product.image} alt={product.name} />
                                 <div className="product-info">
                                     <h3>{product.brand}</h3>

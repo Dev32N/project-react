@@ -21,13 +21,13 @@ const Group1 = () => {
     return (
         <section className="group1">
             <Container>
-                <div className='heading'>
-                    <h3>Sản phẩm mới</h3>
-                    <p>Xem thêm
-                        <span>
-                            <i className="fa-solid fa-angle-right"></i>
-                        </span>
-                    </p>
+                <div className='heading animation-tran'>
+                        <h3 className='site-animation'>Sản phẩm mới</h3>
+                        <p className='site-animation'>Xem thêm
+                            <span>
+                                <i className="fa-solid fa-angle-right"></i>
+                            </span>
+                        </p>
                 </div>
                 <Swiper
                     modules={[Navigation, Autoplay]}
@@ -36,7 +36,7 @@ const Group1 = () => {
                     slidesPerView={6}
                     loop={true}
                     autoplay={{
-                        delay: 2500,
+                        delay: 3000,
                         disableOnInteraction: false,
                     }}
                     breakpoints={{
@@ -45,11 +45,11 @@ const Group1 = () => {
                         768: { slidesPerView: 3 },
                         1024: { slidesPerView: 6 }
                     }}
-                    className="ItemSwiper"
+                    className="ItemSwiper animation-tran"
                 >
                     {products.map((product) => (
                         <SwiperSlide key={product.id}>
-                            <div className="product-card">
+                            <div className="product-card site-animation">
                                 {product.isNew && <div className="new-badge">New</div>}
                                 <img src={product.image} alt={product.name} />
                                 <div className="product-info">

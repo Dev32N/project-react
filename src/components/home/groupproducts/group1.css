@@ -1,8 +1,9 @@
-.group1{
+.group1 {
     width: 80%;
     margin: 0 auto;
 }
-.heading{
+
+.heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,16 +11,20 @@
     margin-top: 30px;
     padding: 10px 0;
 }
-.heading h3{
+
+.heading h3 {
     font-size: 26px;
     color: #3A393A;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.heading p,i {
+
+.heading p,
+i {
     color: #444244;
     padding-right: 5px;
 }
-.heading i{
+
+.heading i {
     margin-left: 6px;
     font-size: 14px;
 }
@@ -46,16 +51,16 @@
     font-size: 12px;
     font-weight: 700;
     border-radius: 4px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    ;
     z-index: 1;
 }
 
 .product-card img {
-    max-width: 90%;
-    flex-grow: 1;
+    max-width: 70% !important;
     margin: 0 auto;
-    padding: 20px;
-    transition: 0.8s ease;
+    transition: 0.6s ease;
+    padding-bottom: 10px;
 }
 
 .product-card img:hover {
@@ -77,6 +82,7 @@
     min-height: 30px;
     line-height: 15px;
 }
+
 .product-info .name {
     margin: 4px 0;
     min-height: 30px;
@@ -111,48 +117,59 @@
 }
 
 @media(max-width:768px) {
+
     .ItemSwiper .swiper-button-next,
-    .ItemSwiper .swiper-button-prev{
+    .ItemSwiper .swiper-button-prev {
         display: none;
     }
+
     .product-info h3 {
         min-height: 30px;
         line-height: 15px;
     }
+
     .product-info .name {
         font-size: 12px;
         margin: 4px 0;
         min-height: 30px;
         line-height: 15px;
     }
-    .product-info .price{
+
+    .product-info .price {
         font-size: 12px;
         min-height: 30px;
         line-height: 15px;
     }
-    .product-info .sizes{
+
+    .product-info .sizes {
         margin-top: 2px;
         font-size: 10px;
     }
 }
+
 @media (max-width: 576px) {
-    .heading h3{
+    .heading h3 {
         font-size: 22px;
         color: #3A393A;
         font-family: Arial, Helvetica, sans-serif;
     }
-    .heading p,i {
+
+    .heading p,
+    i {
         color: #444244;
         font-size: 12px;
     }
 }
+
 @media (max-width: 320px) {
-    .heading h3{
+    .heading h3 {
         font-size: 20px;
         color: #3A393A;
         font-family: Arial, Helvetica, sans-serif;
     }
-    .heading p,i {
+
+    .heading p,
+    i {
         color: #444244;
         font-size: 12px;
     }

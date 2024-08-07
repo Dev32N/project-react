@@ -11,19 +11,19 @@ const Desktopnavbar = () => {
           <Link to="/" className='nav-link home'>1989Perfume</Link>
         </NavItem>
         <NavItem className="nav-item">
-          <Link to="/nuoc-hoa-nam" className='nav-link'>Nước Hoa Nam</Link>
+          <Link to="/nuoc-hoa-nam" className='nav-link nuoc-hoa-nam'>Nước Hoa Nam</Link>
         </NavItem>
         <NavItem className="nav-item">
-          <Link to="/nuoc-hoa-nu" className='nav-link'>Nước Hoa Nữ</Link>
+          <Link to="/nuoc-hoa-nu" className='nav-link nuoc-hoa-nu'>Nước Hoa Nữ</Link>
         </NavItem>
         <NavItem className="nav-item">
-          <Link to="/son-moi" className='nav-link'>Son Môi</Link>
+          <Link to="/son-moi" className='nav-link son-moi'>Son Môi</Link>
         </NavItem>
         <NavItem className="nav-item">
-          <Link to="/blog" className='nav-link'>Blog</Link>
+          <Link to="/blog" className='nav-link blog'>Blog</Link>
         </NavItem>
         <NavItem className="nav-item">
-          <Link to="/lien-he" className='nav-link'>Liên Hệ</Link>
+          <Link to="/lien-he" className='nav-link lienhe'>Liên Hệ</Link>
         </NavItem>
       </Nav>
     </Navbar>

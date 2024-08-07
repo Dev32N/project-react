@@ -3,6 +3,7 @@ import React from 'react';
 import { Container, Col, Form, Button } from 'react-bootstrap';
 import './footer.css';
 import { Input } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
@@ -24,7 +25,7 @@ function Footer() {
                 <Col xs={12} sm={6} md={3} className='col2'>
                     <h5>Về chúng tôi</h5>
                     <ul className='text-left'>
-                        <li><a href="#">Nước hoa nam</a></li>
+                        <li><Link to="/nuoc-hoa-nam">Nước hoa nam</Link></li>
                         <li><a href="#">Nước hoa nữ</a></li>
                         <li><a href="#">Son môi</a></li>
                         <li><a href="#">Blog nổi bật</a></li>

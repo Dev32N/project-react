@@ -1,0 +1,21 @@
+.main-content .container{
+    text-align: center;
+    padding: 20px;
+}
+.magazine-content {
+    width: 80%;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+}
+.magazine-content h1 {
+    display: inline;
+    color: #912d73;
+    border-bottom: 2px solid #912d73;
+    padding: 6px;
+    margin: 20px 0;
+}
+.magazine-content p{
+    margin-top: 30px 0;
+    padding: 20px;
+}

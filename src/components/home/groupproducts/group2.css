@@ -35,11 +35,9 @@
     justify-content: space-between;
 }
 .product-card img {
-    max-width: 90%;
-    flex-grow: 1;
+    max-width: 70% !important;
     margin: 0 auto;
-    padding: 20px;
-    transition: 0.8s ease;
+    transition: 0.6s ease;
 }
 
 .product-card img:hover {

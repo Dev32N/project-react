@@ -28,16 +28,16 @@ const Group3 = () => {
 
     return (
         <section className="group3">
-            <Container>
-                <div className='heading'>
-                    <h3>Nước Hoa Nữ</h3>
-                    <p>Xem thêm
+            <Container >
+                <div className='heading animation-tran'>
+                    <h3 className='site-animation'>Nước Hoa Nữ</h3>
+                    <p className='site-animation'>Xem thêm
                         <span>
                             <i class="fa-solid fa-angle-right"></i>
                         </span>
                     </p>
                 </div>
-                <Swiper
+                <Swiper 
                     modules={[Navigation, Autoplay]}
                     navigation
                     spaceBetween={0}
@@ -53,11 +53,11 @@ const Group3 = () => {
                         768: { slidesPerView: 3 },
                         1024: { slidesPerView: 6 }
                     }}
-                    className="ItemSwiper"
+                    className="ItemSwiper animation-tran"
                 >
                     {products.map((product) => (
                         <SwiperSlide key={product.id}>
-                            <div className="product-card">
+                            <div className="product-card site-animation">
                                 <img src={product.image} alt={product.name} />
                                 <div className="product-info">
                                     <h3>{product.brand}</h3>

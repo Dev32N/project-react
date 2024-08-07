@@ -1,0 +1,147 @@
+.product-list {
+  width: 100%;
+}
+
+.list-bg {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.card-item {
+  background-color: #999;
+  width: 20%;
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  margin: 10px;
+  padding: 6px;
+}
+
+.card-item img {
+  max-width: 100%; /* Adjusted to ensure the image doesn't overflow */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 auto; /* Center horizontally */
+  transition: 0.6s ease;
+  padding: 20px 0; /* Add padding only top and bottom */
+}
+
+.card-item img:hover {
+  transform: scale(1.1);
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.card-info h3.card-name {
+  min-height: 30px;
+  line-height: 15px;
+  font-size: 18px;
+  margin: 6px 0;
+  font-weight: bold;
+}
+
+.card-info p.card-brand {
+  min-height: 30px;
+  line-height: 15px;
+  margin: 4px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.card-info p {
+  min-height: 30px;
+  line-height: 15px;
+  font-size: 14px;
+  margin: 4px 0;
+  color: #666;
+}
+
+.card-info p.card-price {
+  min-height: 30px;
+  line-height: 15px;
+  margin: 10px 0;
+  color: red;
+  font-weight: bold;
+}
+
+.card-info p.card-sizes {
+  font-size: 14px;
+  color: #999;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  list-style-type: none;
+}
+
+.pagination a {
+  padding: 8px 16px;
+  margin: 0 4px;
+  border-radius: 8px;
+  color: #333;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.pagination .active a {
+  color: #b11883;
+}
+
+.pagination a:hover {
+  background-color: #fff0f8;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+  .card-item {
+    width: 25%;
+  }
+}
+
+@media (max-width: 992px) {
+  .card-item {
+    width: 33.33%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-item {
+    width: 33.33%;
+  }
+  .card-item img {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-item {
+    width: 33.33%;
+  }
+  .card-item img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .card-item {
+    width: 100%;
+  }
+  .card-item img {
+    max-width: 100%;
+  }
+}
