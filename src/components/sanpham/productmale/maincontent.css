@@ -1,21 +1,22 @@
-.main-content .container{
-    text-align: center;
-    padding: 20px;
+.main-content .container {
+    width: 100%; /* Ensure the container takes full width */
 }
+
 .magazine-content {
     width: 80%;
-    text-align: center;
-    padding: 20px;
-    margin: 0 auto;
+    margin: 0 auto; 
+    text-align: center; 
 }
+
 .magazine-content h1 {
-    display: inline;
-    color: #912d73;
-    border-bottom: 2px solid #912d73;
-    padding: 6px;
-    margin: 20px 0;
+    color: #a21e7a;
+    padding: 10px;
+    margin-top: 40px;
 }
-.magazine-content p{
-    margin-top: 30px 0;
-    padding: 20px;
+
+.magazine-content p {
+    margin: 5px auto;
+    padding: 10px;
+    max-width: 900px; 
+    text-align: center;
 }

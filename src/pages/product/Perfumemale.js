@@ -6,6 +6,7 @@ import Maincontent from '../../components/sanpham/productmale/Maincontent'
 export default function Perfumemale() {
   return (
     <div>
+      <Header />
       <Maincontent />
       <Footer />
     </div>

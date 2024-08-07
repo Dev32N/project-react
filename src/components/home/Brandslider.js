@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Container, Row } from 'reactstrap';
+import { Container } from 'reactstrap';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import './brandslider.css';
 import './desktopslider.css';

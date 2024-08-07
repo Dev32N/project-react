@@ -104,14 +104,14 @@ body{
 .likecount {
     position: absolute;
     left: auto;
-    top: 2px;
+    top: 0px;
     right: -4px;
     background-color: #d72229;
     color: #fff;
     font-weight: 500;
-    height: 15px;
-    line-height: 15px;
-    width: 15px;
+    height: 16px;
+    line-height: 16px;
+    width: 16px;
     border-radius: 50%;
     display: inline-block;
     text-align: center;
@@ -128,14 +128,14 @@ body{
 .cartcount {
     position: absolute;
     left: auto;
-    top: 2px;
+    top: 0px;
     right: -4px;
     background-color: #d72229;
     color: #fff;
     font-weight: 500;
-    height: 15px;
-    width: 15px;
-    line-height: 15px;
+    height: 16px;
+    width: 16px;
+    line-height: 16px;
     border-radius: 50%;
     display: inline-block;
     text-align: center;
