@@ -4,11 +4,12 @@ import Brandslider from '../../components/home/Brandslider'
 import About1989 from '../../components/home/About1989'
 import Group1 from '../../components/home/groupproducts/Group1'
 import Group2 from '../../components/home/groupproducts/Group2'
-import Group3 from '../../components/home/groupproducts/Group3'
+import Group3spnu from '../../components/home/groupproducts/Group3spnu'
 import Footer from '../../components/footer/Footer'
 import Header from '..//..//components/header/Header'
 import './homepage.css'
 import { Container } from 'react-bootstrap'
+
 
 
 export default function Homepage() {
@@ -38,7 +39,7 @@ export default function Homepage() {
       <Brandslider />
       <Group1 />
       <Group2 />
-      <Group3 />
+      <Group3spnu />
       <About1989 />
       <Footer/>
     </Container>

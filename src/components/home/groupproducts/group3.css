@@ -2,7 +2,7 @@
     width: 80%;
     margin: 0 auto;
 }
-.heading{
+.headingg3{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,20 +10,22 @@
     margin-top: 30px;
     padding: 10px 0;
 }
-.heading h3{
+.headingg3 h3{
     font-size: 26px;
     color: #3A393A;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.heading p,i {
+
+.headingg3 a,p,i {
     color: #444244;
+    text-decoration: none;
 }
-.heading i{
+.headingg3 i{
     margin-left: 6px;
-    font-size: 14px;
+    font-size: 12px;
 }
 
-.product-card {
+.product-card-group3 {
     height: 100%;
     position: relative;
     background: #fff;
@@ -35,13 +37,13 @@
     justify-content: space-between;
     margin: 0 4px;
 }
-.product-card img {
+.product-card-group3 img {
     max-width: 70% !important;
     margin: 0 auto;
     transition: 0.6s ease;
 }
 
-.product-card img:hover {
+.product-card-group3 img:hover {
     transform: scale(1.1);
 }
 
@@ -82,12 +84,12 @@
     line-height: 15px;
 }
 
-.ItemSwiper {
+.group3ItemSwiper {
     --swiper-navigation-size: 24px;
 }
 
-.ItemSwiper .swiper-button-next,
-.ItemSwiper .swiper-button-prev {
+.group3ItemSwiper .swiper-button-next,
+.group3ItemSwiper .swiper-button-prev {
     color: #000;
     top: 50%;
     transform: translateY(-50%);
@@ -95,8 +97,8 @@
 }
 
 @media(max-width:768px) {
-    .ItemSwiper .swiper-button-next,
-    .ItemSwiper .swiper-button-prev{
+    .group3ItemSwiper .swiper-button-next,
+    .group3ItemSwiper .swiper-button-prev{
         display: none;
     }
     .product-info h3 {
@@ -120,23 +122,23 @@
     }
 }
 @media (max-width: 576px) {
-    .heading h3{
+    .headingg3 h3{
         font-size: 22px;
         color: #3A393A;
         font-family: Arial, Helvetica, sans-serif;
     }
-        .heading p,i {
+    .headingg3 p,i {
         color: #444244;
         font-size: 12px;
     }
 }
 @media (max-width: 320px) {
-    .heading h3{
+    .headingg3 h3{
         font-size: 20px;
         color: #3A393A;
         font-family: Arial, Helvetica, sans-serif;
     }
-    .heading p,i {
+    .headingg3 p,i {
         color: #444244;
         font-size: 12px;
     }

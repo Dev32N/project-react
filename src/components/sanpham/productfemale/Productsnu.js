@@ -1,23 +1,23 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchProductsnam } from '../../../redux/productsnamSlice';
+import { fetchProductsnu } from '../../../redux/productsnuSlice';
 import ReactPaginate from 'react-paginate';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import Select from 'react-select';
-import './products.css'; // Đảm bảo rằng file CSS tồn tại và đường dẫn đúng
+import './productnu.css'; // Đảm bảo rằng file CSS tồn tại và đường dẫn đúng
 
 const itemsPerPage = 12;
 
-const ProductListNam = () => {
+const Productsnu = () => {
     const dispatch = useDispatch();
-    const { products, loading, error } = useSelector((state) => state.productsnam);
+    const { products, loading, error } = useSelector((state) => state.productsnu);
     const [currentPage, setCurrentPage] = useState(0);
     const [sortedProducts, setSortedProducts] = useState([]);
     const [sortCriteria, setSortCriteria] = useState('');
 
     useEffect(() => {
-        dispatch(fetchProductsnam());
+        dispatch(fetchProductsnu());
     }, [dispatch]);
 
     useEffect(() => {
@@ -90,7 +90,7 @@ const ProductListNam = () => {
                 <div className='list-bg'>
                     {currentItems.map((product) => (
                         <div key={product.id} className="card-item">
-                            <img src={`/images/products/male/${product.image}.jpg`} alt={product.name} className="product-image" />
+                            <img src={`/images/products/female/${product.image}.jpg`} alt={product.name} className="product-image" />
                             <div className="card-info">
                                 <h3 className="card-name">{product.brand}</h3>
                                 <p className="card-brand">{product.name}</p>
@@ -116,4 +116,4 @@ const ProductListNam = () => {
     );
 };
 
-export default ProductListNam;
+export default Productsnu;

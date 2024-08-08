@@ -22,12 +22,7 @@ const Group1 = () => {
         <section className="group1">
             <Container>
                 <div className='heading animation-tran'>
-                        <h3 className='site-animation'>Sản phẩm mới</h3>
-                        <p className='site-animation'>Xem thêm
-                            <span>
-                                <i className="fa-solid fa-angle-right"></i>
-                            </span>
-                        </p>
+                    <h3 className='site-animation'>Sản phẩm mới</h3>
                 </div>
                 <Swiper
                     modules={[Navigation, Autoplay]}

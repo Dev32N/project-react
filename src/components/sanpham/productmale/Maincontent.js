@@ -1,6 +1,6 @@
 import React from 'react'
-import ProductList from './Products'
 import './maincontent.css'
+import ProductListNam from './Products'
 
 export default function Maincontent() {
     return (
@@ -13,7 +13,7 @@ export default function Maincontent() {
                     </p>
                 </div>
             </div>
-            <ProductList />
+            <ProductListNam />
         </div>
     )
 }

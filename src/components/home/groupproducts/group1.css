@@ -18,17 +18,6 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.heading p,
-i {
-    color: #444244;
-    padding-right: 5px;
-}
-
-.heading i {
-    margin-left: 6px;
-    font-size: 14px;
-}
-
 .product-card {
     height: 100%;
     position: relative;

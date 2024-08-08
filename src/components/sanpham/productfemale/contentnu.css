@@ -1,0 +1,22 @@
+.main-content .container {
+    width: 100%; 
+}
+
+.magazine-content {
+    width: 80%;
+    margin: 0 auto; 
+    text-align: center; 
+}
+
+.magazine-content h1 {
+    color: #a21e7a;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+.magazine-content p {
+    margin: 5px auto;
+    padding: 10px;
+    max-width: 900px; 
+    text-align: center;
+}

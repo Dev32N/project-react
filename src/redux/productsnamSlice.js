@@ -1,9 +1,9 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-// Tạo async thunk để fetch dữ liệu
-export const fetchProducts = createAsyncThunk(
-  'products/fetchProducts',
+// Tạo async thunk để fetch dữ liệu sản phẩm nam
+export const fetchProductsnam = createAsyncThunk(
+  'productsnam/fetchProductsnam',
   async () => {
     const response = await axios.get('https://dev32n.github.io/products-list-api/product.json');
     return response.data;
@@ -11,7 +11,7 @@ export const fetchProducts = createAsyncThunk(
 );
 
 const productsSlice = createSlice({
-  name: 'products',
+  name: 'productsnam',
   initialState: {
     products: [],
     loading: false,
@@ -20,14 +20,14 @@ const productsSlice = createSlice({
   reducers: {},
   extraReducers: (builder) => {
     builder
-      .addCase(fetchProducts.pending, (state) => {
+      .addCase(fetchProductsnam.pending, (state) => {
         state.loading = true;
       })
-      .addCase(fetchProducts.fulfilled, (state, action) => {
+      .addCase(fetchProductsnam.fulfilled, (state, action) => {
         state.loading = false;
         state.products = action.payload;
       })
-      .addCase(fetchProducts.rejected, (state, action) => {
+      .addCase(fetchProductsnam.rejected, (state, action) => {
         state.loading = false;
         state.error = action.error.message;
       });

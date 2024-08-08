@@ -26,7 +26,7 @@ function Footer() {
                     <h5>Về chúng tôi</h5>
                     <ul className='text-left'>
                         <li><Link to="/nuoc-hoa-nam">Nước hoa nam</Link></li>
-                        <li><a href="#">Nước hoa nữ</a></li>
+                        <li><Link to="/nuoc-hoa-nu">Nước hoa nữ</Link></li>
                         <li><a href="#">Son môi</a></li>
                         <li><a href="#">Blog nổi bật</a></li>
                         <li><a href="#">Liên hệ với chúng tôi</a></li>
