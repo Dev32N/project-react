@@ -1,15 +1,13 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
-import { Container, Col, Form, Button } from 'react-bootstrap';
 import './footer.css';
-import { Input } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
-        <Container className='footer'>
-            <Container className='footer-container'>
-                <Col xs={12} sm={6} md={3} className='col1'>
+        <div className='footer'>
+            <div className='footer-container'>
+                <div className='col1'>
                     <img src="/images/logo-trans.png" alt="1989perfume logo" className='footer-logo' />
                     <p>
                         Trên mọi chặng đường chúng tôi đều mang đến các giá trị tốt nhất đến cho người dùng.
@@ -17,56 +15,55 @@ function Footer() {
                         dịch vụ tốt nhất cho người tiêu dùng.
                     </p>
                     <div className="social-icons">
-                        <a href="#"><i className="fab fa-facebook-f"></i></a>
-                        <a href="#"><i className="fab fa-twitter"></i></a>
-                        <a href="#"><i className="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/luis.phan.798/?locale=vi_VN"><i className="fab fa-facebook-f"></i></a>
+                        <a href="https://www.facebook.com/luis.phan.798/?locale=vi_VN"><i className="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/luis.phan.798/?locale=vi_VN"><i className="fab fa-instagram"></i></a>
                     </div>
-                </Col>
-                <Col xs={12} sm={6} md={3} className='col2'>
+                </div>
+                <div className='col3'>
+                    <h5>Hỗ trợ khách hàng</h5>
+                    <ul>
+                        <li><Link to="/lien-he">Các câu hỏi thường gặp</Link></li>
+                        <li><Link to="/lien-he">Cách thức mua hàng</Link></li>
+                        <li><Link to="/lien-he">Hướng dẫn đặt hàng</Link></li>
+                        <li><Link to="/lien-he">Phương thức thanh toán</Link></li>
+                        <li><Link to="/lien-he">Phương thức vận chuyển</Link></li>
+                        <li><Link to="/lien-he">Chính sách đổi trả</Link></li>
+                        <li><Link to="/lien-he">Chính sách bảo mật</Link></li>
+                    </ul>
+                </div>
+                <div className='col2'>
                     <h5>Về chúng tôi</h5>
                     <ul className='text-left'>
                         <li><Link to="/nuoc-hoa-nam">Nước hoa nam</Link></li>
                         <li><Link to="/nuoc-hoa-nu">Nước hoa nữ</Link></li>
-                        <li><a href="#">Son môi</a></li>
-                        <li><a href="#">Blog nổi bật</a></li>
-                        <li><a href="#">Liên hệ với chúng tôi</a></li>
+                        <li><Link to="/blog">Blog trendy</Link></li>
+                        <li><Link to="/lien-he">Liên hệ 1989Perfume</Link></li>
                     </ul>
-                </Col>
-                <Col xs={12} sm={6} md={3} className='col3'>
-                    <h5>Hỗ trợ khách hàng</h5>
-                    <ul>
-                        <li><a href="#">Các câu hỏi thường gặp</a></li>
-                        <li><a href="#">Cách thức mua hàng</a></li>
-                        <li><a href="#">Hướng dẫn đặt hàng</a></li>
-                        <li><a href="#">Phương thức thanh toán</a></li>
-                        <li><a href="#">Phương thức vận chuyển</a></li>
-                        <li><a href="#">Chính sách đổi trả</a></li>
-                        <li><a href="#">Chính sách bảo mật</a></li>
-                    </ul>
-                </Col>
-                <Col xs={12} sm={6} md={3} className='col4'>
+                </div>
+                <div className='col4'>
                     <h5>Đăng ký nhận thông báo</h5>
-                    <Form>
-                        <Input type='email' placeholder='nhập email của bạn' />
-                        <Button variant="primary" type="submit">
+                    <form>
+                        <input type='email' placeholder='nhập email của bạn' />
+                        <button variant="primary" type="submit">
                             Đăng ký
-                        </Button>
-                    </Form>
+                        </button>
+                    </form>
                     <div className='contact'>
                         <i className="fas fa-phone"></i>
                         <span> Hotline: 798469635 (9am - 10pm)</span>
                     </div>
                     <div className='payment'>
-                        <p><span><i class="fa-regular fa-credit-card"></i></span>Thanh toán tiện lợi</p>
-                        <img src='./images/payment.png'></img>
+                        <p><span><i class="fa-regular fa-credit-card"></i></span> Thanh toán tiện lợi</p>
+                        <img src='/images/payment.png'></img>
                     </div>
-                </Col>
-            </Container>
+                </div>
+            </div>
             <div className="copyright">
                 <hr />
                 <p>Copyright 2024 © nhanphan. All Rights Reserved.</p>
             </div>
-        </Container>
+        </div>
     );
 }
 

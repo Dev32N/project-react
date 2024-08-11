@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './tabmenu.css';
-import { Container } from 'react-bootstrap';
 
 const About1989 = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -75,19 +74,19 @@ const About1989 = () => {
             </div>
           </div>
         </div>
-        <Container className="contain-text">
+        <div className="contain-text">
           {tabs.map((tab, index) => (
             <div
               key={index}
               className={`tab ${activeTab === index ? 'active' : ''}`}
             >
-              <Container className="content">
+              <div className="content">
                 <h5>{tab.title2}</h5>
                 <p>{tab.content}</p>
-              </Container>
+              </div>
             </div>
           ))}
-        </Container>
+        </div>
       </section>
       <section className="tabbar2">
         <div className='tab2bg'>
@@ -107,19 +106,19 @@ const About1989 = () => {
             </div>
           </div>
         </div>
-        <Container className="contain-text">
+        <div className="contain-text">
           {tab2.map((tab, index) => (
             <div
               key={index}
               className={`tab ${activeTab2 === index ? 'active' : ''}`}
             >
-              <Container className="content">
+              <div className="content">
                 <h5>{tab.title2}</h5>
                 <p>{tab.content}</p>
-              </Container>
+              </div>
             </div>
           ))}
-        </Container>
+        </div>
       </section>
     </>
   );

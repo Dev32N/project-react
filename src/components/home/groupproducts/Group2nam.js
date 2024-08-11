@@ -4,25 +4,27 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import './group2.css';
 import { Navigation, Autoplay } from 'swiper/modules';
-import { Container } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchProductsnam } from '../../../redux/productsnamSlice';
+import { fetchProducts } from '../../../redux/productSlice';
 
-const Group2 = () => {
+const Group2nam = () => {
     const dispatch = useDispatch();
-    const { products, loading, error } = useSelector((state) => state.productsnam);
+    const { loading, products, error } = useSelector((state) => state.products);
 
     useEffect(() => {
-        dispatch(fetchProductsnam());
+        dispatch(fetchProducts());
+        window.scrollTo(0, 0);
     }, [dispatch]);
+
+    const menProducts = products.filter((product) => product.gender === "male");
 
     if (loading) return <p>Loading...</p>;
     if (error) return <p>Error: {error}</p>;
 
     return (
         <section className="group2">
-            <Container>
+            <div>
                 <div className='headingg2 animation-tran'>
                     <h3 className='site-animation'>Nước Hoa Nam</h3>
                     <Link to="/nuoc-hoa-nam">
@@ -41,7 +43,7 @@ const Group2 = () => {
                     loop={true}
                     autoplay={{
                         delay: 3500,
-                        disableOnInteraction: false,
+                        disableOnInteraction: false,    
                     }}
                     breakpoints={{
                         320: { slidesPerView: 2 },
@@ -51,23 +53,25 @@ const Group2 = () => {
                     }}
                     className="group2ItemSwiper animation-tran"
                 >
-                    {products.map((product) => (
+                    {menProducts.map((product) => (
                         <SwiperSlide key={product.id}>
-                            <div className="product-card site-animation">
-                                <img src={`./images/products/male/${product.image}.jpg`} alt={product.name} />
-                                <div className="product-info">
-                                    <h3>{product.brand}</h3>
-                                    <p className='name'>{product.name}</p>
-                                    <p className="price">{product.price}</p>
-                                    <p className='sizes'>{product.sizes}</p>
+                            <Link to={`/product-detail/${product.id}`}>
+                                <div className="product-card site-animation">
+                                    <img src={`/images/products/${product.image}.jpg`} alt={product.name} />
+                                    <div className="product-info">
+                                        <h3>{product.brand}</h3>
+                                        <p className='name'>{product.name}</p>
+                                        <p className="price">{product.price} VND</p>
+                                        <p className='sizes'>{product.sizes}</p>
+                                    </div>
                                 </div>
-                            </div>
+                            </Link>
                         </SwiperSlide>
                     ))}
                 </Swiper>
-            </Container>
+            </div>
         </section>
     );
 };
 
-export default Group2;
+export default Group2nam;

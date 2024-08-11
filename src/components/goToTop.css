@@ -1,0 +1,17 @@
+/* src/components/goToTop.css */
+.go-to-top {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    background-color: rgba(255, 199, 209, 0.874);
+    border: none;
+    padding: 4px;
+}
+
+.go-to-top:hover {
+    background-color: rgb(248, 119, 140); /* Màu nền khi hover */
+    opacity: 0.7;
+}

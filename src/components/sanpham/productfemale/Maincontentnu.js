@@ -1,6 +1,6 @@
 import React from 'react'
 import './contentnu.css'
-import Productsnu from './Productsnu'
+import ProductListNu from './ProductListFemale'
 
 export default function Maincontentnu() {
     return (
@@ -13,7 +13,7 @@ export default function Maincontentnu() {
                     </p>
                 </div>
             </div>
-            <Productsnu />
+            <ProductListNu />
         </div>
     )
 }

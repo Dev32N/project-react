@@ -1,7 +1,7 @@
 .footer {
     background-image: linear-gradient(to top, rgb(255, 211, 225), #fdf5f5);
-    box-sizing: border-box; 
-    padding: 20px 0 10px 0;
+    box-sizing: border-box;
+    padding: 30px 0;
 }
 
 .footer-container {
@@ -9,10 +9,11 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    padding: 10px;
+    padding: 20px 10px;
     color: #222020;
 }
-.footer-container .col1{
+
+.footer-container .col1 {
     text-align: center;
 }
 
@@ -21,46 +22,59 @@
 .footer-container .col3,
 .footer-container .col4 {
     flex: 25%;
-    padding: 0 20px;
+    padding: 0 10px;
     box-sizing: border-box;
 }
-.footer-container .col2{
-    padding-left: 70px;
+
+.footer-container .col3 {
+    padding-left: 60px;
+}
+
+.footer-container .col2 {
+    padding-left: 40px;
 }
 
 .footer-container .col1 img {
-    padding-top: 25px;
     max-width: 150px;
-    margin-bottom: 5px;
-}
-.footer-container .col1 p{
-    letter-spacing: 0.5px;
+    margin-bottom: 10px;
 }
 
-.footer-container .social-icons a i {
-    width: 20px;
-    height: 20px;
-    line-height: 20px;
-    text-align: center;
-    background-color: #fdf6f69e;
+.footer-container .col1 p {
+    letter-spacing: 0.5px;
+    padding: 5px;
+}
+
+.footer-container .social-icons {
     padding: 10px;
-    font-size: 20px;
+}
+
+.footer-container .social-icons a {
+    text-align: center;
+    background-color: #ffe4f5;
+    color: #000;
+    padding: 10px;
+    margin: 5px;
     border-radius: 8px;
-    margin: 0 5px;
-    color: rgb(255, 85, 130);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
 
-.footer-container .social-icons a i:hover {
-    background-color: #fff;
-    color: rgb(192, 30, 73);
-    transform: scale(1.1);
+.footer-container .social-icons i {
+    width: 20px;
+    height: 20px;
+    color: #cd1f93;
 }
+
+.footer-container .social-icons a:hover {
+    background-color: #ffd3f1;
+    transform: scale(1.4);
+}
+
 
 .footer-container h5 {
     font-size: 22px;
     margin-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .footer-container ul {
@@ -76,9 +90,11 @@
     text-decoration: none;
     color: #2b2929;
 }
-.footer-container ul li a:hover{
+
+.footer-container ul li a:hover {
     color: #ec1da7;
 }
+
 .footer-container form Input[type='email'] {
     padding: 8px;
     margin-right: 10px;
@@ -86,6 +102,7 @@
     border: 1px solid rgb(249, 91, 118);
     outline: rgb(249, 91, 118);
 }
+
 .footer-container form button {
     margin: 12px 0;
     padding: 8px 14px;
@@ -111,7 +128,7 @@
     margin-top: 5px;
     white-space: nowrap;
     color: #302e2e;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .copyright hr {
@@ -127,13 +144,15 @@
     font-size: 13px;
     color: #6c757d;
 }
+
 .footer-container .payment p {
-    padding-top: 2px;
+    padding-top: 6px;
     white-space: nowrap;
     color: #302e2e;
-    font-weight: 800;
+    font-weight: 600;
 }
-.footer-container .payment img{
+
+.footer-container .payment img {
     width: 80%;
 }
 
@@ -159,7 +178,7 @@
         flex: 1 1 50%;
         max-width: 50%;
         text-align: center;
-        padding: 0;
+        padding: 10px;
     }
 }
 
@@ -173,11 +192,12 @@
         flex: 1 1 100%;
         max-width: 100%;
         text-align: center;
-        padding: 0;
+        padding: 10px;
     }
 }
 
 @media (max-width: 576px) {
+
     .footer-container .col1,
     .footer-container .col2,
     .footer-container .col3,
@@ -185,15 +205,14 @@
         flex: 1 1 100%;
         max-width: 100%;
         text-align: center;
-        padding: 0;
+        padding: 10px;
     }
+
     .footer-container h5 {
         font-size: 18px;
         margin-bottom: 10px;
     }
-    .footer-container .social-icons a i {
-        margin: 10px 10px;
-    }
+
     .footer-container .col1 p {
         margin: 10px;
     }
@@ -213,6 +232,7 @@
 }
 
 @media (max-width: 320px) {
+
     .footer-container .col1,
     .footer-container .col2,
     .footer-container .col3,
@@ -220,15 +240,14 @@
         flex: 1 1 100%;
         max-width: 100%;
         text-align: center;
-        padding: 0;
+        padding: 10px;
     }
+
     .footer-container h5 {
         font-size: 18px;
         margin-bottom: 10px;
     }
-    .footer-container .social-icons a i {
-        margin: 10px 10px;
-    }
+
     .footer-container .col1 p {
         margin: 10px;
     }

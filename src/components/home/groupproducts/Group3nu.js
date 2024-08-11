@@ -4,25 +4,29 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import './group3.css';
 import { Navigation, Autoplay } from 'swiper/modules';
-import { Container } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchProductsnu } from '../../../redux/productsnuSlice';
+import { fetchProducts } from '../../../redux/productSlice';
 
-const Group3spnu = () => {
+
+
+
+
+const Group3nu = () => {
     const dispatch = useDispatch();
-    const { products, loading, error } = useSelector((state) => state.productsnu);
+    const { loading, products, error } = useSelector((state) => state.products);
 
     useEffect(() => {
-        dispatch(fetchProductsnu());
+        dispatch(fetchProducts());
     }, [dispatch]);
+
+    const womenProducts = products.filter((product) => product.gender === "female");
 
     if (loading) return <p>Loading...</p>;
     if (error) return <p>Error: {error}</p>;
-
     return (
         <section className="group3">
-            <Container>
+            <div>
                 <div className='headingg3 animation-tran'>
                     <h3 className='site-animation'>Nước Hoa Nữ</h3>
                     <Link to="/nuoc-hoa-nu">
@@ -51,23 +55,25 @@ const Group3spnu = () => {
                     }}
                     className="group2ItemSwiper animation-tran"
                 >
-                    {products.map((product) => (
+                    {womenProducts.map((product) => (
                         <SwiperSlide key={product.id}>
-                            <div className="product-card-group3 site-animation">
-                                <img src={`./images/products/female/${product.image}.jpg`} alt={product.name} />
-                                <div className="product-info">
-                                    <h3>{product.brand}</h3>
-                                    <p className='name'>{product.name}</p>
-                                    <p className="price">{product.price}</p>
-                                    <p className='sizes'>{product.sizes}</p>
+                            <Link to={`/product-detail/${product.id}`}>
+                                <div className="product-card-group3 site-animation">
+                                    <img src={`./images/products/${product.image}.jpg`} alt={product.name} />
+                                    <div className="product-info">
+                                        <h3>{product.brand}</h3>
+                                        <p className='name'>{product.name}</p>
+                                        <p className="price">{product.price} VND</p>
+                                        <p className='sizes'>{product.sizes}</p>
+                                    </div>
                                 </div>
-                            </div>
+                            </Link>
                         </SwiperSlide>
                     ))}
                 </Swiper>
-            </Container>
+            </div>
         </section>
     );
 };
 
-export default Group3spnu;
+export default Group3nu;

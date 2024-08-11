@@ -1,32 +1,35 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchProductsnam } from '../../../redux/productsnamSlice';
 import ReactPaginate from 'react-paginate';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import Select from 'react-select';
-import './products.css'; // Đảm bảo rằng file CSS tồn tại và đường dẫn đúng
+import { fetchProducts } from '../../../redux/productSlice';
+import "./productfemale.css"
+import { addItem } from '../../../redux/cartSlice';
+import { Button } from 'reactstrap';
 
 const itemsPerPage = 12;
 
-const ProductListNam = () => {
+const ProductListNu = () => {
     const dispatch = useDispatch();
-    const { products, loading, error } = useSelector((state) => state.productsnam);
+    const { loading, products, error } = useSelector((state) => state.products);
     const [currentPage, setCurrentPage] = useState(0);
     const [sortedProducts, setSortedProducts] = useState([]);
     const [sortCriteria, setSortCriteria] = useState('');
 
     useEffect(() => {
-        dispatch(fetchProductsnam());
+        dispatch(fetchProducts());
+        window.scrollTo(0, 0);
     }, [dispatch]);
 
     useEffect(() => {
         if (sortCriteria === '') {
-            setSortedProducts(products);
+            setSortedProducts(products.filter(product => product.gender === "female"));
             return;
         }
 
-        let sorted = [...products];
+        let sorted = products.filter(product => product.gender === "female");
         switch (sortCriteria) {
             case 'name-asc':
                 sorted.sort((a, b) => a.name.localeCompare(b.name));
@@ -62,6 +65,10 @@ const ProductListNam = () => {
         setSortCriteria(selectedOption.value);
         setCurrentPage(0);
     };
+    const handleAddToCart = (product) => {
+        const quantity = 1; // Assuming you want to add one item at a time
+        dispatch(addItem({ ...product, quantity }));
+    };
 
     const options = [
         { value: 'name-asc', label: 'Tên: A-Z' },
@@ -71,10 +78,10 @@ const ProductListNam = () => {
     ];
 
     return (
-        <div className="product-list">
-            <div className='title-sp'>
+        <div className="product-list-nu">
+            <div className='title-sp-nu'>
                 <div>
-                    <h2>{sortedProducts.length} sản phẩm :</h2>
+                    <h2>{sortedProducts.length} sản phẩm </h2>
                 </div>
                 <div className="filter-dropdown">
                     <Select
@@ -90,12 +97,19 @@ const ProductListNam = () => {
                 <div className='list-bg'>
                     {currentItems.map((product) => (
                         <div key={product.id} className="card-item">
-                            <img src={`/images/products/male/${product.image}.jpg`} alt={product.name} className="product-image" />
+                            <img src={`/images/products/${product.image}.jpg`} alt={product.name} className="product-image" />
                             <div className="card-info">
-                                <h3 className="card-name">{product.brand}</h3>
-                                <p className="card-brand">{product.name}</p>
-                                <p className="card-price">{product.price}</p>
+                                <h3 className="card-brand">{product.brand}</h3>
+                                <p className="card-name">{product.name}</p>
+                                <p className="card-price">{product.price}đ</p>
                                 <p className="card-sizes">{product.sizes}</p>
+                                <Button
+                                    variant="primary"
+                                    className="add-to-cart-btn"
+                                    onClick={() => handleAddToCart(product)}
+                                >
+                                    Thêm vào giỏ hàng
+                                </Button>
                             </div>
                         </div>
                     ))}
@@ -116,4 +130,4 @@ const ProductListNam = () => {
     );
 };
 
-export default ProductListNam;
+export default ProductListNu;

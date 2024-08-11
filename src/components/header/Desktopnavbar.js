@@ -17,9 +17,6 @@ const Desktopnavbar = () => {
           <Link to="/nuoc-hoa-nu" className='nav-link nuoc-hoa-nu'>Nước Hoa Nữ</Link>
         </NavItem>
         <NavItem className="nav-item">
-          <Link to="/son-moi" className='nav-link son-moi'>Son Môi</Link>
-        </NavItem>
-        <NavItem className="nav-item">
           <Link to="/blog" className='nav-link blog'>Blog</Link>
         </NavItem>
         <NavItem className="nav-item">

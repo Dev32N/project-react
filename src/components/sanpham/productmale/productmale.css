@@ -1,5 +1,6 @@
 .product-list {
   width: 100%;
+  box-sizing: border-box;
 }
 
 .title-sp {
@@ -12,6 +13,7 @@
 
 .title-sp h2 {
   padding: 10px;
+  font-size: 22px;
 }
 
 .title-sp .filter-dropdown {
@@ -62,18 +64,19 @@
   padding-top: 20px;
 }
 
-.card-info h3.card-name {
-  font-size: 18px;
+.card-info .card-brand {
+  font-size: 16px;
   margin: 6px 0;
   font-weight: bold;
+  color: #555;
 }
 
-.card-info p.card-brand {
+.card-info .card-name {
   min-height: 30px;
   line-height: 15px;
   margin: 4px 0;
-  font-size: 16px;
-  color: #333;
+  font-size: 14px;
+  color: #555;
 }
 
 .card-info p {
@@ -89,7 +92,7 @@
   line-height: 15px;
   margin: 10px 0;
   color: red;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .card-info p.card-sizes {
@@ -115,8 +118,8 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.pagination .active a {
-  color: #b11883;
+.pagination .active {
+  color: #da20a2;
 }
 
 .pagination a:hover {
@@ -177,6 +180,11 @@
 }
 
 @media (max-width: 576px) {
+  .title-sp h2 {
+    padding: 10px;
+    font-size: 16px;
+  }
+
   .list-bg {
     width: 100%;
   }
@@ -226,12 +234,21 @@
     font-size: 12px;
     color: #999;
   }
-  .title-sp .filter-dropdown, h2 {
+
+  .title-sp h2 .filter-dropdown,
+  h2 {
     font-size: 14px;
   }
 }
 
 @media (max-width: 320px) {
+  .title-sp h2 {
+    padding: 10px;
+    font-size: 14px;
+    min-height: 30px;
+    line-height: 15px;
+  }
+
   .list-bg {
     width: 100%;
   }
@@ -279,6 +296,7 @@
     font-size: 12px;
     color: #999;
   }
+
   .title-sp h2 {
     font-size: 14px;
   }

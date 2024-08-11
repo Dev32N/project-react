@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container } from 'reactstrap';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import './brandslider.css';
 import './desktopslider.css';
@@ -46,7 +45,7 @@ export default function Brandslider() {
         <h3>Thương Hiệu</h3>
       </div>
       <div className='brcontain'>
-        <Container className='brandslider-container'>
+        <div className='brandslider-container'>
           <div className="carouselbrand">
             <Swiper
               spaceBetween={0}
@@ -66,7 +65,7 @@ export default function Brandslider() {
               ))}
             </Swiper>
           </div>
-        </Container>
+        </div>
         <div className='listbrand'>
             {listlogo.map((item) => (
               <div key={item.id} className='brand-logo'>

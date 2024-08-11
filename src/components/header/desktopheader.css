@@ -43,7 +43,7 @@ body{
     max-width: calc(100% - 50px);
 }
 
-.searchBar button {
+.searchBar .btn-searchbar {
     background-image: linear-gradient(to bottom, rgb(208, 84, 26),rgb(237, 65, 171));
     border-radius: 0 10px 10px 0;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
@@ -51,13 +51,14 @@ body{
     border: none;
     text-align: center;
     cursor: pointer;
+    margin: 0 !important;
 }
 
-.searchBar button:hover {
+.searchBar .btn-searchbar:hover {
     background-color: rgb(241, 201, 226);
 }
 
-.searchBar button i {
+.searchBar .btn-searchbar i {
     font-size: 18px;
     color: white;
 }
@@ -142,4 +143,32 @@ body{
     font-style: normal;
     font-size: 10px;
     padding-left: 1px;
+}
+
+
+.cart-container {
+    position: relative;
+}
+
+.cart-item {
+    position: relative;
+    text-decoration: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.cart-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0; 
+    width: 300px; 
+    background-color: #fff;
+    border: 1px solid #ddd; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+    display: none;
+    z-index: 1000; 
+}
+
+.cart-container:hover .cart-dropdown {
+    display: block;
 }
