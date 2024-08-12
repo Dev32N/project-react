@@ -14,9 +14,9 @@ export default function Desktopheader() {
         <div>
             <div className='header'>
                 <div className='header-container'>
-                    <a href='/' className='logo'>
+                    <Link to="/" className='logo'>
                         <img src={`${process.env.PUBLIC_URL}/images/logo-trans.png`} alt="logo" />
-                    </a>
+                    </Link>
                     <div className='searchBar'>
                         <input type='text' placeholder='Tìm kiếm mẫu nước hoa....' />
                         <button className='btn-searchbar'>
