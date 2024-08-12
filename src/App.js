@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import "./App.css";
 import Blogs from './pages/Blogs';
 import Contact from './pages/Contact';
@@ -13,7 +13,7 @@ import ShowAllProducts from './components/sanpham/ShowAllProducts';
 
 export default function App() {
   return (
-    <Router>
+    <HashRouter>
       <div>
         <div className='slogan'>Thương hiệu nước hoa được feedback nhiều nhất Việt Nam</div>
         <Routes>
@@ -29,6 +29,6 @@ export default function App() {
           
         </Routes>
       </div>
-    </Router>
+    </HashRouter>
   );
 }
