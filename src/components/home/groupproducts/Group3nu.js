@@ -8,11 +8,8 @@ import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchProducts } from '../../../redux/productSlice';
 
-
-
-
-
 const Group3nu = () => {
+    const publicUrl = process.env.PUBLIC_URL;
     const dispatch = useDispatch();
     const { loading, products, error } = useSelector((state) => state.products);
 
@@ -59,7 +56,7 @@ const Group3nu = () => {
                         <SwiperSlide key={product.id}>
                             <Link to={`/product-detail/${product.id}`}>
                                 <div className="product-card-group3 site-animation">
-                                    <img src={`./images/products/${product.image}.jpg`} alt={product.name} />
+                                    <img src={`${publicUrl}/images/products/${product.image}.jpg`} alt={product.name} />
                                     <div className="product-info">
                                         <h3>{product.brand}</h3>
                                         <p className='name'>{product.name}</p>

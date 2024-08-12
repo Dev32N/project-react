@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom';
 import GoToTopBtn from '../GoToTopBtn';
 
 const CartDetail = () => {
+    const publicUrl = process.env.PUBLIC_URL;
     const dispatch = useDispatch();
     const cartItems = useSelector(state => state.cart.items);
 
@@ -76,7 +77,7 @@ const CartDetail = () => {
                             {cartItems.map(item => (
                                 <Row key={item.id} className="cart-item-detail">
                                     <Col xs={2}>
-                                        <img src={`/images/products/${item.image}.jpg`} alt={item.name} className="item-image" />
+                                        <img src={`${publicUrl}/images/products/${item.image}.jpg`} alt={item.name} className="item-image" />
                                     </Col>
                                     <Col xs={3} className="item-detail-brand-name">
                                         <p className='item-detail-brand'>{item.brand}</p>

@@ -9,6 +9,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchProducts } from '../../../redux/productSlice';
 
 const Group2nam = () => {
+    const publicUrl = process.env.PUBLIC_URL;
     const dispatch = useDispatch();
     const { loading, products, error } = useSelector((state) => state.products);
 
@@ -57,7 +58,7 @@ const Group2nam = () => {
                         <SwiperSlide key={product.id}>
                             <Link to={`/product-detail/${product.id}`}>
                                 <div className="product-card site-animation">
-                                    <img src={`/images/products/${product.image}.jpg`} alt={product.name} />
+                                    <img src={`${publicUrl}/images/products/${product.image}.jpg`} alt={product.name} />
                                     <div className="product-info">
                                         <h3>{product.brand}</h3>
                                         <p className='name'>{product.name}</p>

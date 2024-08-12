@@ -61,7 +61,7 @@
     font-weight: 600;
 }
 
-.add-to-cart-btn {
+.all-add-to-cart-btn {
     width: 80%;
     background-color: #f95b76;
     border-color: #f95b76;
@@ -69,7 +69,7 @@
     font-size: 14px;
 }
 
-.add-to-cart-btn:hover {
+.all-add-to-cart-btn:hover {
     background-color: #cb3c54;
     border-color: #cb3c54;
 }

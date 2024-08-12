@@ -126,6 +126,19 @@
   background-color: #fff0f8;
 }
 
+.add-to-cart-btn {
+  width: 80%;
+  background-color: #f95b76;
+  border-color: #f95b76;
+  color: #fff;
+  font-size: 14px;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #cb3c54;
+  border-color: #cb3c54;
+}
+
 /* Media Queries for Responsive Design */
 @media (max-width: 1200px) {
   .card-item {

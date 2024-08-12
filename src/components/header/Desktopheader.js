@@ -15,7 +15,7 @@ export default function Desktopheader() {
             <div className='header'>
                 <div className='header-container'>
                     <a href='/' className='logo'>
-                        <img src={`/images/logo-trans.png`} alt="logo" />
+                        <img src={`${process.env.PUBLIC_URL}/images/logo-trans.png`} alt="logo" />
                     </a>
                     <div className='searchBar'>
                         <input type='text' placeholder='Tìm kiếm mẫu nước hoa....' />
@@ -25,11 +25,11 @@ export default function Desktopheader() {
                     </div>
                     <div className='contentnav2'>
                         <a href='#' className='user-login'>
-                            <img src={`/images/icon-user.svg`} alt="user" />
+                            <img src={`${process.env.PUBLIC_URL}/images/icon-user.svg`} alt="user" />
                             <p>Đăng nhập</p>
                         </a>
                         <a href='#' className='like-item'>
-                            <img src={`/images/icon-favorite.svg`} alt="like" />
+                            <img src={`${process.env.PUBLIC_URL}/images/icon-favorite.svg`} alt="like" />
                             <p className='likecount'>0</p>
                         </a>
                         <div className='cart-container'
@@ -37,7 +37,7 @@ export default function Desktopheader() {
                             onMouseLeave={() => setCartDropdownOpen(false)}>
                             <Link to="/cart-detail" className='cart-link'>
                                 <div className='cart-item'>
-                                    <img src={`/images/icon-cart.svg`} alt="cart" />
+                                    <img src={`${process.env.PUBLIC_URL}/images/icon-cart.svg`} alt="cart" />
                                     <p className='cartcount'>{cartCount}</p>
                                 </div>
                             </Link>

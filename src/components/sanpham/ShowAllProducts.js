@@ -69,7 +69,7 @@ const ShowAllProducts = () => {
         setCurrentPage(0);
     };
 
-    const handleAddToCart = (product) => {
+    const addToCartFunc = (product) => {
         const quantity = 1; // Assuming you want to add one item at a time
         dispatch(addItem({ ...product, quantity }));
     };
@@ -105,21 +105,21 @@ const ShowAllProducts = () => {
                     {currentItems.map((product) => (
                         <Col key={product.id} xs={12} sm={6} md={4} lg={3} className="all-item-cart">
                             <Link to={`/product-detail/${product.id}`} className="product-link">
-                                <img src={`/images/products/${product.image}.jpg`} alt={product.name} className="product-image" />
+                                <img src={`./images/products/${product.image}.jpg`} alt={product.name} className="product-image" />
                                 <div className="all-pro-info">
                                     <h3 className="all-name">{product.brand}</h3>
                                     <p className="all-brand">{product.name}</p>
                                     <p className="all-price">{product.price} VND</p>
                                     <p className="all-sizes">{product.sizes}</p>
-                                    <Button
-                                        variant="primary"
-                                        className="add-to-cart-btn"
-                                        onClick={() => handleAddToCart(product)}
-                                    >
-                                        Thêm vào giỏ hàng
-                                    </Button>
                                 </div>
                             </Link>
+                            <Button
+                                variant="primary"
+                                className="all-add-to-cart-btn"
+                                onClick={() => addToCartFunc(product)}
+                            >
+                                Thêm vào giỏ hàng
+                            </Button>
                         </Col>
                     ))}
                 </Row>

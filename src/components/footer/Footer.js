@@ -2,13 +2,12 @@
 import React from 'react';
 import './footer.css';
 import { Link } from 'react-router-dom';
-
 function Footer() {
     return (
         <div className='footer'>
             <div className='footer-container'>
                 <div className='col1'>
-                    <img src="/images/logo-trans.png" alt="1989perfume logo" className='footer-logo' />
+                    <img src={`${process.env.PUBLIC_URL}/images/logo-trans.png`} alt="1989perfume logo" className='footer-logo' />
                     <p>
                         Trên mọi chặng đường chúng tôi đều mang đến các giá trị tốt nhất đến cho người dùng.
                         1989Perfume luôn lắng nghe khách hàng để ngày càng cải thiện và mang đến chất lượng
@@ -55,7 +54,7 @@ function Footer() {
                     </div>
                     <div className='payment'>
                         <p><span><i class="fa-regular fa-credit-card"></i></span> Thanh toán tiện lợi</p>
-                        <img src='/images/payment.png'></img>
+                        <img src={`${process.env.PUBLIC_URL}/images/payment.png`}></img>
                     </div>
                 </div>
             </div>

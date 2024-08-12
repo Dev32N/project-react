@@ -12,6 +12,7 @@ import { Button } from 'reactstrap';
 const itemsPerPage = 12;
 
 const ProductListNu = () => {
+    const publicUrl = process.env.PUBLIC_URL;
     const dispatch = useDispatch();
     const { loading, products, error } = useSelector((state) => state.products);
     const [currentPage, setCurrentPage] = useState(0);
@@ -97,7 +98,7 @@ const ProductListNu = () => {
                 <div className='list-bg'>
                     {currentItems.map((product) => (
                         <div key={product.id} className="card-item">
-                            <img src={`/images/products/${product.image}.jpg`} alt={product.name} className="product-image" />
+                            <img src={`${publicUrl}/images/products/${product.image}.jpg`} alt={product.name} className="product-image" />
                             <div className="card-info">
                                 <h3 className="card-brand">{product.brand}</h3>
                                 <p className="card-name">{product.name}</p>

@@ -5,6 +5,7 @@ import { Button } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 const CartDropdown = () => {
+    const publicUrl = process.env.PUBLIC_URL;
     const cartItems = useSelector((state) => state.cart.items);
     const cartCount = cartItems.reduce((total, item) => total + item.quantity, 0);
 
@@ -28,7 +29,7 @@ const CartDropdown = () => {
                 ) : (
                     cartItems.map((item) => (
                         <div key={item.id} className='cart-item'>
-                            <img src={`/images/products/${item.image}.jpg`} alt={item.name} />
+                            <img src={`${publicUrl}/images/products/${item.image}.jpg`} alt={item.name} />
                             <div className='cart-item-info'>
                                 <p className='item-name'>{item.name}</p>
                                 <div className='bg-content'>

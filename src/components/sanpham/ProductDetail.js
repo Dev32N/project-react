@@ -10,6 +10,7 @@ import Footer from '../../components/footer/Footer';
 import GoToTopBtn from '../GoToTopBtn';
 
 const ProductDetail = () => {
+    const publicUrl = process.env.PUBLIC_URL;
     const { productId } = useParams();
     const dispatch = useDispatch();
     const { loading, products, error } = useSelector((state) => state.products);
@@ -54,7 +55,7 @@ const ProductDetail = () => {
                 </Container>
                 <div className="product-detail">
                     <div className="product-detail-image">
-                        <img src={`/images/products/${product.image}.jpg`} alt={product.name} />
+                        <img src={`${publicUrl}/images/products/${product.image}.jpg`} alt={product.name} />
                     </div>
                     <div className="product-detail-info">
                         <h2>{product.name}</h2>
