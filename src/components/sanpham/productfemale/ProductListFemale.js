@@ -8,6 +8,7 @@ import { fetchProducts } from '../../../redux/productSlice';
 import "./productfemale.css"
 import { addItem } from '../../../redux/cartSlice';
 import { Button } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 const itemsPerPage = 12;
 
@@ -98,20 +99,22 @@ const ProductListNu = () => {
                 <div className='list-bg'>
                     {currentItems.map((product) => (
                         <div key={product.id} className="card-item">
-                            <img src={`${publicUrl}/images/products/${product.image}.jpg`} alt={product.name} className="product-image" />
-                            <div className="card-info">
-                                <h3 className="card-brand">{product.brand}</h3>
-                                <p className="card-name">{product.name}</p>
-                                <p className="card-price">{product.price}đ</p>
-                                <p className="card-sizes">{product.sizes}</p>
-                                <Button
-                                    variant="primary"
-                                    className="add-to-cart-btn"
-                                    onClick={() => handleAddToCart(product)}
-                                >
-                                    Thêm vào giỏ hàng
-                                </Button>
-                            </div>
+                            <Link to={`/product-detail/${product.id}`}>
+                                <img src={`${publicUrl}/images/products/${product.image}.jpg`} alt={product.name} className="product-image" />
+                                <div className="card-info">
+                                    <h3 className="card-brand">{product.brand}</h3>
+                                    <p className="card-name">{product.name}</p>
+                                    <p className="card-price">{product.price}đ</p>
+                                    <p className="card-sizes">{product.sizes}</p>
+                                </div>
+                            </Link>
+                            <Button
+                                variant="primary"
+                                className="add-to-cart-btn"
+                                onClick={() => handleAddToCart(product)}
+                            >
+                                Thêm vào giỏ hàng
+                            </Button>
                         </div>
                     ))}
                 </div>

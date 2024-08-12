@@ -4,7 +4,7 @@
 }
 
 .title-sp {
-  width: 70%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,6 +42,9 @@
   position: relative;
   margin: 10px 0;
   padding: 6px;
+}
+.card-item a{
+  text-decoration: none;
 }
 
 .card-item img {
@@ -132,6 +135,7 @@
   border-color: #f95b76;
   color: #fff;
   font-size: 14px;
+  margin: 0 auto;
 }
 
 .add-to-cart-btn:hover {

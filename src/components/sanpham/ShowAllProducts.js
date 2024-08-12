@@ -16,6 +16,7 @@ import GoToTopBtn from '../GoToTopBtn';
 const itemsPerPage = 12;
 
 const ShowAllProducts = () => {
+    const publicUrl = process.env.PUBLIC_URL;
     const dispatch = useDispatch();
     const { loading, products, error } = useSelector((state) => state.products);
     const [currentPage, setCurrentPage] = useState(0);
@@ -105,7 +106,7 @@ const ShowAllProducts = () => {
                     {currentItems.map((product) => (
                         <Col key={product.id} xs={12} sm={6} md={4} lg={3} className="all-item-cart">
                             <Link to={`/product-detail/${product.id}`} className="product-link">
-                                <img src={`./images/products/${product.image}.jpg`} alt={product.name} className="product-image" />
+                                <img src={`${publicUrl}/images/products/${product.image}.jpg`} alt={product.name} className="product-image" />
                                 <div className="all-pro-info">
                                     <h3 className="all-name">{product.brand}</h3>
                                     <p className="all-brand">{product.name}</p>
