@@ -15,7 +15,7 @@ export default function App() {
   return (
     <HashRouter>
       <div>
-        <div className='slogan'>Thương hiệu nước hoa được feedback nhiều nhất Việt Nam</div>
+        <div className='slogan'>Tiệm Cafe sạch mang đến trải nghiệm thưởng thức cà phê nguyên chất, không hóa chất vì sức khỏe người tiêu dùng.</div>
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/nuoc-hoa-nam" element={<Perfumemale />} />
@@ -26,7 +26,7 @@ export default function App() {
           <Route path="/cart-detail" element={<CartDetail />} />
           <Route path="/all-products" element={<ShowAllProducts />} />
 
-          
+
         </Routes>
       </div>
     </HashRouter>

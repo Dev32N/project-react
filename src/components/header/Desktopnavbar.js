@@ -8,13 +8,13 @@ const Desktopnavbar = () => {
     <Navbar className='nav-container' expand="md">
       <Nav className="navbar-nav" navbar>
         <NavItem className="nav-item">
-          <Link to="/" className='nav-link home'>1989Perfume</Link>
+          <Link to="/" className='nav-link home'>Cafe-Fresh</Link>
         </NavItem>
         <NavItem className="nav-item">
-          <Link to="/nuoc-hoa-nam" className='nav-link nuoc-hoa-nam'>Nước Hoa Nam</Link>
+          <Link to="/nuoc-hoa-nam" className='nav-link nuoc-hoa-nam'>Cà phê hạt rang</Link>
         </NavItem>
         <NavItem className="nav-item">
-          <Link to="/nuoc-hoa-nu" className='nav-link nuoc-hoa-nu'>Nước Hoa Nữ</Link>
+          <Link to="/nuoc-hoa-nu" className='nav-link nuoc-hoa-nu'>Menu trà</Link>
         </NavItem>
         <NavItem className="nav-item">
           <Link to="/blog" className='nav-link blog'>Blog</Link>

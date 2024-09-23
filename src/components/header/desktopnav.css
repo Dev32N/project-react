@@ -44,11 +44,11 @@
 
 
 .nav-link:hover {
-    color: #a31077;
+    color: rgb(255, 129, 25);
 }
 
 .nav-item .home {
     font-weight: 700;
-    color: #cc2a9c;
+    color: #7e480c;
     font-weight: 700;
 }

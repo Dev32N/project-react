@@ -6,30 +6,30 @@ body{
 }
 .header{
     width: 100%;
-    background-image: linear-gradient(to bottom, rgb(255, 248, 251),#fff);
+    background-color: #fff;
     margin: 0 auto;
 }
 .header-container {
-    padding: 20px 0px 0px 0px;
+    padding-top: 10px;
     display: flex;
     width: 80%;
     justify-content: center;
+    align-items: center;
     margin: 0 auto;
 }
 .logo img{
-    width: 150px;
+    width: 200px;
 }
 /*=====================================================
     search bar
  ====================================================== */
 .searchBar {
-    padding-left: 25px;
+    padding-left: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 650px;
     width: 100%;
-    margin: 0 10px;
 }
 
 .searchBar input {
@@ -44,7 +44,7 @@ body{
 }
 
 .searchBar .btn-searchbar {
-    background-image: linear-gradient(to bottom, rgb(208, 84, 26),rgb(237, 65, 171));
+    background-image: linear-gradient(to bottom, #ffa323,#fb7217);
     border-radius: 0 10px 10px 0;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
     padding: 11px;

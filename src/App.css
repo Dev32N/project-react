@@ -1,9 +1,10 @@
 .slogan{
-    background-color: rgb(170, 32, 73);
+    background-image: linear-gradient(to right, #ffb141, #fb8d17);
     text-align: center;
     color: #fff;
     padding: 6px 0px;
     font-size: 14px;
     width: 100%;
     white-space: nowrap;
+    font-weight: 500;
 }

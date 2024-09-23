@@ -15,10 +15,10 @@ export default function Desktopheader() {
             <div className='header'>
                 <div className='header-container'>
                     <Link to="/" className='logo'>
-                        <img src={`${process.env.PUBLIC_URL}/images/logo-trans.png`} alt="logo" />
+                        <img src={`${process.env.PUBLIC_URL}/images/icon-home.png`} alt="logo" />
                     </Link>
                     <div className='searchBar'>
-                        <input type='text' placeholder='Tìm kiếm mẫu nước hoa....' />
+                        <input type='text' placeholder='Tìm kiếm sản phẩm . . .' />
                         <button className='btn-searchbar'>
                             <span><i className="fa-solid fa-magnifying-glass"></i></span>
                         </button>
